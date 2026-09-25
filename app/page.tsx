@@ -1,5 +1,6 @@
 import { ComoFunciona } from "@/components/landing/ComoFunciona";
 import { Contribuir } from "@/components/landing/Contribuir";
+import { Dicionario } from "@/components/landing/Dicionario";
 import { Hero } from "@/components/landing/Hero";
 import { ParaQueServe } from "@/components/landing/ParaQueServe";
 import { Trilhas } from "@/components/landing/Trilhas";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="mx-auto w-full max-w-6xl flex-1 px-4">
       <Hero rotaInicial={trilhas[0]?.rota ?? "/"} totalAulas={totalAulas} totalPerguntas={totalPerguntas} />
       <ParaQueServe />
+      <Dicionario />
       <ComoFunciona />
       <Trilhas trilhas={trilhas} />
       <Contribuir />

@@ -7,6 +7,15 @@ export const REPOSITORIO =
 
 export const BRANCH = "main";
 
+export const URL_SITE = process.env.FALADEV_URL ?? "https://faladev.bksystem.es";
+
+export const IMAGEM_COMPARTILHAMENTO = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: "FalaDev — aprenda a falar o que você já sabe fazer",
+};
+
 export const URL_REPOSITORIO = REPOSITORIO ? `https://github.com/${REPOSITORIO}` : undefined;
 
 export function urlArquivoNoGithub(caminho: string, modo: "blob" | "edit" = "blob") {

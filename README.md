@@ -16,8 +16,8 @@ Sem cadastro, sem login, sem banco. Você abre, escolhe a trilha e estuda.
 | [Node.js](conteudo/node/) | Linguagem | 12 | 50 |
 | [NestJS](conteudo/nestjs/) | Framework | 10 | 50 |
 | [Next.js](conteudo/nextjs/) | Framework | 10 | 50 |
-| [Java](conteudo/java/) | Linguagem | 10 | 41 |
-| [Spring](conteudo/spring/) | Framework | 2 | 15 |
+| [Java](conteudo/java/) | Linguagem | 10 | 50 |
+| [Spring](conteudo/spring/) | Framework | 5 | 37 |
 
 Além disso, o [dicionário do dia a dia](conteudo/dicionario-do-dia-a-dia.md) traduz o jeito que a gente fala ("joguei pra rodar em segundo plano") pro termo técnico ("processamento assíncrono com fila").
 

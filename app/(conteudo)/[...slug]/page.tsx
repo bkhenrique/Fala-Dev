@@ -6,7 +6,7 @@ import { NavegacaoAulas } from "@/components/NavegacaoAulas";
 import { lerPagina, listarPaginas, PASTA_CONTEUDO } from "@/lib/conteudo/arquivos";
 import { tituloDoMarkdown } from "@/lib/conteudo/titulo";
 import { buscarTrilha } from "@/lib/conteudo/trilhas";
-import { urlArquivoNoGithub } from "@/lib/site";
+import { IMAGEM_COMPARTILHAMENTO, urlArquivoNoGithub } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -21,9 +21,21 @@ export async function generateMetadata(props: PageProps<"/[...slug]">): Promise<
 
   const trilha = buscarTrilha(slug[0]);
   const titulo = tituloDoMarkdown(pagina.markdown, pagina.arquivo);
+  const tituloCompleto = trilha && !titulo.includes(trilha.titulo) ? `${titulo} · ${trilha.titulo}` : titulo;
+  const descricao = typeof pagina.dados.descricao === "string" ? pagina.dados.descricao : trilha?.descricao;
   return {
-    title: trilha && !titulo.includes(trilha.titulo) ? `${titulo} · ${trilha.titulo}` : titulo,
-    description: typeof pagina.dados.descricao === "string" ? pagina.dados.descricao : trilha?.descricao,
+    title: tituloCompleto,
+    description: descricao,
+    alternates: { canonical: `${pagina.rota}/` },
+    openGraph: {
+      type: "article",
+      locale: "pt_BR",
+      siteName: "FalaDev",
+      title: tituloCompleto,
+      description: descricao,
+      url: `${pagina.rota}/`,
+      images: [IMAGEM_COMPARTILHAMENTO],
+    },
   };
 }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Rodape } from "@/components/Rodape";
+import { IMAGEM_COMPARTILHAMENTO, URL_SITE } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,10 +15,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const descricao =
+  "Aulas, glossário e perguntas de entrevista sobre teoria de desenvolvimento: Node.js, NestJS, Next.js, Java, Spring e fundamentos.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(URL_SITE),
   title: { default: "FalaDev — aprenda a falar o que você já sabe fazer", template: "%s · FalaDev" },
-  description:
-    "Aulas, glossário e perguntas de entrevista sobre teoria de desenvolvimento: Node.js, NestJS, Next.js, Java, Spring e fundamentos.",
+  description: descricao,
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "FalaDev",
+    description: descricao,
+    images: [IMAGEM_COMPARTILHAMENTO],
+  },
+  twitter: { card: "summary_large_image", images: [IMAGEM_COMPARTILHAMENTO] },
 };
 
 // Aplica o tema salvo antes da primeira pintura, pra página não piscar no claro.
