@@ -18,6 +18,7 @@ Sem cadastro, sem login, sem banco. Você abre, escolhe a trilha e estuda.
 | [NestJS](conteudo/nestjs/) | Framework | 11 | 55 |
 | [Next.js](conteudo/nextjs/) | Framework | 10 | 50 |
 | [JavaScript](conteudo/javascript/) | Linguagem | 10 | 50 |
+| [TypeScript](conteudo/typescript/) | Linguagem | 10 | 50 |
 | [Java](conteudo/java/) | Linguagem | 10 | 50 |
 | [Spring](conteudo/spring/) | Framework | 7 | 47 |
 | [PHP](conteudo/php/) | Linguagem | 10 | 50 |
