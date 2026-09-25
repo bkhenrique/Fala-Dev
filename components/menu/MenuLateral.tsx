@@ -64,7 +64,7 @@ function BlocoTrilha({ trilha, atual }: { trilha: TrilhaMenu; atual: string }) {
           </ItemMenu>
         ))}
         {trilha.rotaPerguntas && (
-          <ItemMenu href={trilha.rotaPerguntas} ativo={atual === trilha.rotaPerguntas}>Perguntas</ItemMenu>
+          <ItemMenu href={trilha.rotaPerguntas} ativo={atual.startsWith(trilha.rotaPerguntas)}>Perguntas</ItemMenu>
         )}
         {trilha.rotaGlossario && (
           <ItemMenu href={trilha.rotaGlossario} ativo={atual === trilha.rotaGlossario}>Glossário</ItemMenu>

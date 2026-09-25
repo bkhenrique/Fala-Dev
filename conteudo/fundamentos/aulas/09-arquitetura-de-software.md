@@ -150,4 +150,4 @@ Diferença: **gateway** é genérico e transversal (infraestrutura); **BFF** tem
 arquitetura · trade-off · requisito não funcional · atributo de qualidade · monolito · big ball of mud · monolito modular · microsserviços · deploy independente · banco por serviço · monolito distribuído · Lei de Conway · serverless · cold start · arquitetura em camadas · Clean Architecture · arquitetura hexagonal · ports and adapters · onion · DIP · overengineering · DDD · linguagem ubíqua · bounded context · context map · anti-corruption layer · entidade · value object · agregado · raiz de agregado · domain event · API Gateway · BFF · ADR
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 09** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 09** e separadas por nível.

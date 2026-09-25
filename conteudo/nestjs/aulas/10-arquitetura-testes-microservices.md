@@ -176,4 +176,4 @@ Alternativa madura: **monolito modular**. Os módulos do Nest já dão fronteira
 arquitetura em camadas · Clean Architecture · arquitetura hexagonal · ports and adapters · domínio · caso de uso · regra de dependência · overengineering · pirâmide de testes · teste unitário · teste de integração · e2e · mock · stub · fake · spy · Testcontainers · supertest · microservices · transporter · MessagePattern · EventPattern · request-response · fire-and-forget · consistência eventual · monolito modular · monorepo · versionamento de API
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 10** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 10** e separadas por nível.

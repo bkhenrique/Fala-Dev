@@ -1,19 +1,19 @@
 ---
 titulo: Next.js
 tipo: framework
-base: node
-ordem: 4
+base: react
+ordem: 5
 descricao: Renderização, hydration, App Router, Server Components, cache, Server Actions e deploy.
 ---
 # Next.js
 
-Curso teórico em 10 aulas, na ordem. Pré-requisito: conhecer React básico e ter feito as aulas de [Node.js](../node/).
+Curso teórico em 10 aulas, na ordem. Pré-requisito: a trilha de [React](../react/) (o Next é construído sobre ele) e as aulas de [Node.js](../node/).
 
 ## Como estudar
 
 1. Leia **uma aula por vez**.
 2. Feche o arquivo e **explique em voz alta**.
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 
 ## Aulas

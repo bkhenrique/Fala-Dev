@@ -196,4 +196,4 @@ Se o front está em outra origem, configure CORS **no Spring Security** (`.cors(
 Spring Security · filtro · Servlet · DelegatingFilterProxy · FilterChainProxy · SecurityFilterChain · Chain of Responsibility · deny by default · Authentication · principal · authority · role · SecurityContextHolder · ThreadLocal · AuthenticationManager · AuthenticationProvider · UserDetailsService · PasswordEncoder · BCrypt · DelegatingPasswordEncoder · authorizeHttpRequests · @EnableMethodSecurity · @PreAuthorize · SpEL · IDOR · AuthenticationEntryPoint · AccessDeniedHandler · resource server · issuer-uri · JWKS · stateless · CSRF · CORS · @WithMockUser
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 03** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 03** e separadas por nível.

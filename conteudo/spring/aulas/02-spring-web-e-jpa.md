@@ -215,4 +215,4 @@ public PedidoResponse buscar(Long id) { ... }
 REST · @RestController · @RequestMapping · @GetMapping · @PathVariable · @RequestParam · @RequestBody · ResponseEntity · Jackson · DispatcherServlet · Front Controller · Bean Validation · @Valid · Hibernate Validator · @RestControllerAdvice · @ExceptionHandler · ProblemDetail · RFC 7807 · JPA · Hibernate · Spring Data JPA · @Entity · JpaRepository · query derivada · JPQL · @Query · Pageable · EntityManager · persistence context · dirty checking · managed · detached · LAZY · EAGER · N+1 · JOIN FETCH · @EntityGraph · @BatchSize · projeção · LazyInitializationException · open-in-view · @Transactional · rollback · propagação · REQUIRES_NEW · readOnly · isolamento
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 02** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 02** e separadas por nível.

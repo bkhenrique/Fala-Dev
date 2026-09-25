@@ -211,4 +211,4 @@ Um dos bugs mais comuns. O linter (`@typescript-eslint/no-floating-promises`) aj
 callback · error-first callback · callback hell · Promise · pending · fulfilled · rejected · settled · chaining · async/await · açúcar sintático · Promise.all · allSettled · race · any · fail-fast · unhandled rejection · promisify · concorrência limitada
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 05** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 05** e separadas por nível.

@@ -141,4 +141,4 @@ Existe um padrão oficial de decorators no JavaScript (TC39, suportado no TypeSc
 TypeScript · superset · tipagem estática · transpilação · decorator · metadata · reflect-metadata · programação declarativa · experimentalDecorators · emitDecoratorMetadata · design:paramtypes · token de injeção · SetMetadata · Reflector · createParamDecorator · applyDecorators
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 02** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 02** e separadas por nível.

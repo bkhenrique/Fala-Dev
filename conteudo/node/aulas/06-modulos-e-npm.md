@@ -174,4 +174,4 @@ Boas práticas:
 módulo · CommonJS · ES Modules · require · import/export · tree shaking · top-level await · dynamic import · npm · package.json · dependencies · devDependencies · semver · breaking change · caret · tilde · lockfile · dependência transitiva · build reproduzível · npm ci · supply chain · typosquatting
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 06** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 06** e separadas por nível.

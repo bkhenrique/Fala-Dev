@@ -154,4 +154,4 @@ Como falar:
 EventEmitter · evento · listener · emit · observer · publish/subscribe · desacoplamento · memory leak · MaxListenersExceededWarning · message broker
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 07** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 07** e separadas por nível.

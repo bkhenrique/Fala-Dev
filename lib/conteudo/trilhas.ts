@@ -27,9 +27,14 @@ export const GRUPOS: { tipo: TipoTrilha; rotulo: string }[] = [
   { tipo: "framework", rotulo: "Frameworks" },
 ];
 
-function contarPerguntas(arquivo: string) {
-  if (!existeArquivo(arquivo)) return 0;
-  return lerArquivo(arquivo).markdown.match(/^\*\*\d+\.\s/gm)?.length ?? 0;
+const NIVEIS = [1, 2, 3];
+
+function contarPerguntas(id: string) {
+  return NIVEIS.reduce((total, n) => {
+    const arquivo = `${id}/perguntas/nivel-${n}.md`;
+    if (!existeArquivo(arquivo)) return total;
+    return total + (lerArquivo(arquivo).markdown.match(/^\*\*\d+\.\s/gm)?.length ?? 0);
+  }, 0);
 }
 
 function montarTrilha(id: string): Trilha {
@@ -47,7 +52,7 @@ function montarTrilha(id: string): Trilha {
       };
     });
 
-  const perguntas = `${id}/perguntas.md`;
+  const perguntas = `${id}/perguntas/README.md`;
   const glossario = `${id}/glossario.md`;
 
   return {
@@ -59,7 +64,7 @@ function montarTrilha(id: string): Trilha {
     descricao: dados.descricao ? String(dados.descricao) : undefined,
     rota: `/${id}`,
     aulas,
-    totalPerguntas: contarPerguntas(perguntas),
+    totalPerguntas: contarPerguntas(id),
     rotaPerguntas: existeArquivo(perguntas) ? rotaDoArquivo(perguntas) : undefined,
     rotaGlossario: existeArquivo(glossario) ? rotaDoArquivo(glossario) : undefined,
   };

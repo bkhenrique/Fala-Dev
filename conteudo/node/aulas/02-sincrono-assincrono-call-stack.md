@@ -163,4 +163,4 @@ Consequência direta: **se o seu código nunca esvazia a pilha (loop pesado), ne
 call stack · frame · LIFO · stack overflow · síncrono · assíncrono · bloqueante · não bloqueante · callback · CPU-bound
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 02** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 02** e separadas por nível.

@@ -169,4 +169,4 @@ A exceção mais famosa do Java. Formas de reduzir:
 Throwable · Error · Exception · RuntimeException · checked · unchecked · throws · try · catch · finally · multi-catch · try-with-resources · AutoCloseable · suppressed exception · exceção customizada · exceção de domínio · exception chaining · causa · stack trace · fail fast · engolir exceção · tratamento centralizado · NullPointerException · helpful NPE · requireNonNull
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 07** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 07** e separadas por nível.

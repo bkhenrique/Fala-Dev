@@ -149,4 +149,4 @@ Padrão comum: buscar os dados iniciais no **Server Component** e passar como `i
 data fetching · waterfall · Promise.all · request memoization · data cache · full route cache · router cache · cache() · prop drilling · force-cache · no-store · revalidate · tags · unstable_cache · use cache · Cache Components · rota estática · rota dinâmica · cookies() · headers() · force-dynamic · revalidatePath · revalidateTag · invalidação de cache · streaming · Suspense · fallback · TanStack Query · SWR
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 06** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 06** e separadas por nível.

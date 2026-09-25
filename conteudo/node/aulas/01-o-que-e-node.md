@@ -155,4 +155,4 @@ Isso não significa "nunca use Node pra isso", significa "tire esse trabalho da 
 runtime · V8 · libuv · JIT · heap · garbage collector · I/O · I/O não bloqueante · orientado a eventos · single-thread · thread pool · concorrência · paralelismo · I/O-bound · CPU-bound
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 01** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 01** e separadas por nível.

@@ -144,4 +144,4 @@ for await (const chunk of fs.createReadStream('grande.log')) {
 Buffer · byte · encoding · UTF-8 · base64 · stream · chunk · Readable · Writable · Duplex · Transform · backpressure · highWaterMark · drain · pipe · pipeline · out of memory · time to first byte · async iterable
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 08** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 08** e separadas por nível.

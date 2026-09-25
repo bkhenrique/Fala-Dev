@@ -2,17 +2,17 @@
 titulo: Fundamentos
 tipo: fundamentos
 ordem: 1
-descricao: Web, HTTP, APIs, segurança, banco, cache, mensageria, arquitetura e operação. Vale pra qualquer stack.
+descricao: Web, HTTP, APIs, segurança, banco, cache, mensageria, arquitetura, Git, algoritmos, system design, IA e entrevista.
 ---
 # Fundamentos
 
-Curso teórico em 12 aulas sobre o que vale **para qualquer stack**: web, HTTP, APIs, segurança, banco, cache, mensageria, arquitetura, escala, design de código e operação. É o que mais aparece em entrevista de backend/fullstack, independente da linguagem.
+Curso teórico em 17 aulas sobre o que vale **para qualquer stack**: web, HTTP, APIs, segurança, banco, cache, mensageria, arquitetura, escala, design de código e operação. É o que mais aparece em entrevista de backend/fullstack, independente da linguagem.
 
 ## Como estudar
 
 1. Leia **uma aula por vez**.
 2. Feche o arquivo e **explique em voz alta**.
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 
 ## Aulas
@@ -34,6 +34,13 @@ Curso teórico em 12 aulas sobre o que vale **para qualquer stack**: web, HTTP, 
 - [ ] [10 — Escalabilidade e resiliência](aulas/10-escalabilidade-e-resiliencia.md)
 - [ ] [11 — Design de código: SOLID, acoplamento, débito técnico](aulas/11-design-de-codigo.md)
 - [ ] [12 — Observabilidade, testes, CI/CD, containers e deploy](aulas/12-observabilidade-e-devops.md)
+
+### Entrevista e carreira
+- [ ] [13 — Git e fluxo de trabalho em equipe](aulas/13-git-e-fluxo-de-trabalho.md)
+- [ ] [14 — Estruturas de dados, algoritmos e Big O](aulas/14-estruturas-de-dados-e-big-o.md)
+- [ ] [15 — System design: como responder "desenhe um sistema"](aulas/15-system-design.md)
+- [ ] [16 — IA para devs: LLMs, embeddings, RAG e agentes](aulas/16-ia-para-devs.md)
+- [ ] [17 — Entrevista comportamental: como contar a sua experiência](aulas/17-entrevista-comportamental.md)
 
 ## Revisão rápida
 

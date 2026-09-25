@@ -75,3 +75,24 @@ Cada termo tem três partes: **Em uma frase** (a definição curta), **Traduzind
 - **Em uma frase:** registrar um provider de forma customizada com `useClass`, `useValue`, `useFactory` ou `useExisting`.
 - **Traduzindo:** dizer ao Nest exatamente como criar aquela dependência.
 - **Como falar:** "Registrei um token `AI_PROVIDER` com `useClass` apontando pra implementação escolhida por config, aplicando inversão de dependência."
+
+
+### Resolver
+- **Em uma frase:** função que fornece o valor de um campo, Query, Mutation ou Subscription do schema GraphQL.
+- **Traduzindo:** a peça que responde a cada campo pedido pelo cliente.
+- **Como falar:** "Mantenho resolver fino e delego regra de negócio a providers."
+
+### DataLoader
+- **Em uma frase:** utilitário por requisição que agrupa e deduplica buscas para evitar N+1.
+- **Traduzindo:** espera juntar várias consultas pequenas e resolve com uma busca em lote.
+- **Como falar:** "Crio DataLoader por usuário e por requisição, sem misturar cache nem autorização."
+
+### GraphQL Subscription
+- **Em uma frase:** operação GraphQL que mantém um canal para entregar eventos selecionados pelo cliente.
+- **Traduzindo:** uma assinatura que recebe atualizações quando algo acontece.
+- **Como falar:** "Uso subscription quando o tempo real faz parte do contrato GraphQL e limito o acesso ao fluxo."
+
+### WebSocket Gateway
+- **Em uma frase:** provider Nest que recebe mensagens e envia eventos por conexões WebSocket.
+- **Traduzindo:** controller para mensagens persistentes.
+- **Como falar:** "Gateway integra com DI e guards, mas precisa de adapter compartilhado quando há várias réplicas."

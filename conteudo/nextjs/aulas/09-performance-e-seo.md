@@ -142,4 +142,4 @@ export async function generateMetadata({ params }) {
 Core Web Vitals · LCP · INP · CLS · FID · TTFB · FCP · Lighthouse · RUM · CrUX · next/image · srcset · WebP · AVIF · lazy loading · priority · next/font · code splitting · dynamic import · bundle analyzer · next/script · main thread · useTransition · CDN · SEO · Metadata API · generateMetadata · Open Graph · canonical · sitemap · robots.txt · JSON-LD · rich results
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 09** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 09** e separadas por nível.

@@ -2,18 +2,18 @@
 titulo: NestJS
 tipo: framework
 base: node
-ordem: 3
-descricao: Decorators, módulos, injeção de dependência, ciclo da requisição, validação, auth e arquitetura.
+ordem: 4
+descricao: Decorators, módulos, DI, validação, auth, GraphQL, WebSockets e arquitetura.
 ---
 # NestJS
 
-Curso teórico em 10 aulas, na ordem. Pré-requisito: as aulas de [Node.js](../node/), principalmente Event Loop, Promises e HTTP/Express.
+Curso teórico em 11 aulas, na ordem. Pré-requisito: as aulas de [Node.js](../node/), principalmente Event Loop, Promises e HTTP/Express.
 
 ## Como estudar
 
 1. Leia **uma aula por vez**.
 2. Feche o arquivo e **explique em voz alta**.
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 
 ## Aulas
@@ -28,6 +28,8 @@ Curso teórico em 10 aulas, na ordem. Pré-requisito: as aulas de [Node.js](../n
 - [ ] [08 — Banco de dados: ORM, Repository, Transações](aulas/08-banco-de-dados.md)
 - [ ] [09 — Config, Filas, Eventos e Cron](aulas/09-config-filas-eventos-cron.md)
 - [ ] [10 — Arquitetura, Testes e Microservices](aulas/10-arquitetura-testes-microservices.md)
+
+- [ ] [11 — GraphQL, subscriptions e WebSockets](aulas/11-graphql-e-websockets.md)
 
 ## Revisão rápida
 

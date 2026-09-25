@@ -174,4 +174,4 @@ Como investigar: métricas de heap (sobe e não volta depois do GC), **heap dump
 stack · frame · heap · metaspace · PermGen · StackOverflowError · OutOfMemoryError · -Xmx · primitivo · tipo de referência · null · NullPointerException · wrapper · autoboxing · unboxing · Integer cache · equals · pass-by-value · garbage collector · GC roots · inalcançável · hipótese geracional · young generation · Eden · survivor · old generation · minor GC · full GC · stop-the-world · G1 · ZGC · memory leak · heap dump · JFR
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 02** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 02** e separadas por nível.

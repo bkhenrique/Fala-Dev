@@ -189,4 +189,4 @@ Soluções no mundo Spring:
 evento de domínio · ApplicationEventPublisher · @EventListener · @TransactionalEventListener · AFTER_COMMIT · @Async · @EnableAsync · TaskExecutor · CompletableFuture · virtual threads · @Scheduled · cron · fixedRate · fixedDelay · ShedLock · Spring for Apache Kafka · KafkaTemplate · @KafkaListener · partição · chave · consumer group · DefaultErrorHandler · DLT · Spring AMQP · RabbitTemplate · exchange · routing key · binding · DLX · Spring Cloud Stream · at-least-once · idempotência · dual write · Outbox · CDC · Spring Modulith
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 04** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 04** e separadas por nível.

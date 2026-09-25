@@ -167,4 +167,4 @@ CREATE INDEX idx_pedidos_cliente_status ON pedidos (cliente_id, status);
 modelo relacional · tabela · chave primária · chave estrangeira · integridade referencial · constraint · JOIN · CTE · window function · normalização · 1FN · 2FN · 3FN · desnormalização · transação · commit · rollback · ACID · atomicidade · consistência · isolamento · durabilidade · WAL · dirty read · non-repeatable read · phantom read · lost update · Read Committed · Repeatable Read · Serializable · lock pessimista · SELECT FOR UPDATE · lock otimista · version · deadlock · índice · B-Tree · full table scan · índice composto · prefixo mais à esquerda · seletividade · covering index · índice parcial · GIN · pgvector · EXPLAIN ANALYZE · plano de execução · pg_stat_statements
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 05** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 05** e separadas por nível.

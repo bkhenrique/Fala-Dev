@@ -171,4 +171,4 @@ Arquivos estáticos com **hash no nome** (`app.3f9a1.js`) podem ter `max-age` de
 stateless · método HTTP · seguro · idempotente · GET · POST · PUT · PATCH · DELETE · OPTIONS · status code · 200 · 201 · 202 · 204 · 304 · 400 · 401 · 403 · 404 · 409 · 422 · 429 · 500 · 502 · 503 · 504 · header · Content-Type · Accept · Authorization · Location · cookie · HttpOnly · Secure · SameSite · Cache-Control · max-age · no-cache · no-store · ETag · If-None-Match · cache busting · HTTP/2 · multiplexação · head-of-line blocking · HTTP/3 · QUIC
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 02** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 02** e separadas por nível.

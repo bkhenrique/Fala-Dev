@@ -136,4 +136,4 @@ Quando uma SPA pura ainda faz sentido: painel interno logado, sem necessidade de
 React · biblioteca · framework · componente · SPA · CSR · SEO · bundle · waterfall · fullstack · Vercel · roteamento por arquivos · SSR · SSG · ISR · Server Components · Server Actions · Route Handlers · Pages Router · App Router · getServerSideProps · getStaticProps · streaming
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 01** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 01** e separadas por nível.

@@ -169,4 +169,4 @@ Trade-offs: build **lento**, sem as otimizações dinâmicas do JIT (throughput 
 produção · Actuator · health check · liveness · readiness · probe · Prometheus · Micrometer · métrica de negócio · Micrometer Tracing · OpenTelemetry · trace id · log estruturado · @ConfigurationProperties · @Validated · fail fast · secret manager · @Cacheable · @CacheEvict · Caffeine · Redis · RestClient · WebClient · @HttpExchange · timeout · Resilience4j · circuit breaker · retry · bulkhead · rate limiter · graceful shutdown · SIGTERM · virtual threads · WebFlux · MaxRAMPercentage · OOM killer · GraalVM · Native Image · AOT · Buildpacks
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 05** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 05** e separadas por nível.

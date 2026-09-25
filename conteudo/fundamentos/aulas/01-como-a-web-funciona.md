@@ -129,4 +129,4 @@ Por isso:
 cliente-servidor · TCP/IP · camada de aplicação · camada de transporte · IP · porta · DNS · resolver recursivo · servidor raiz · TLD · servidor autoritativo · TTL · registro A · CNAME · TCP · UDP · three-way handshake · RTT · latência · TLS · SSL · HTTPS · certificado · autoridade certificadora · criptografia assimétrica · criptografia simétrica · proxy · reverse proxy · CDN · load balancer
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 01** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 01** e separadas por nível.

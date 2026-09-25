@@ -168,4 +168,4 @@ Isso é **isolamento de falhas na UI**: um erro não derruba a aplicação intei
 App Router · file-system routing · segmento · colocation · page · layout · template · loading · error · not-found · Error Boundary · Suspense · layout aninhado · preservação de estado · rota dinâmica · catch-all · params · searchParams · notFound · route group · pasta privada · parallel routes · intercepting routes · Link · prefetch · navegação client-side · useRouter · redirect · skeleton
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 04** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 04** e separadas por nível.

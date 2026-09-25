@@ -155,4 +155,4 @@ Serviços se comunicam publicando **eventos** (fatos no passado: `PedidoCriado`,
 comunicação síncrona · comunicação assíncrona · broker · desacoplamento temporal · buffer · fila · point-to-point · work queue · pub/sub · tópico · assinante · log de eventos · Kafka · partição · offset · consumer group · retenção · replay · at-most-once · at-least-once · exactly-once · ack · idempotência · retry · backoff · jitter · DLQ · poison message · dual write · transactional outbox · CDC · Debezium · 2PC · saga · ação compensatória · coreografia · orquestração · event-driven architecture · evento · comando · schema registry · event sourcing · CQRS · consistência eventual
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 08** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 08** e separadas por nível.

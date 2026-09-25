@@ -154,4 +154,4 @@ Os **três pilares**:
 uncaughtException · unhandledRejection · fail-fast · erro operacional · erro de programação · SIGTERM · SIGKILL · graceful shutdown · liveness probe · readiness probe · rolling update · heap · garbage collector · young/old generation · memory leak · heap snapshot · profiling · flame graph · 12-Factor App · variável de ambiente · NODE_ENV · log estruturado · correlation id · p95/p99 · OpenTelemetry · SQL injection · command injection
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 12** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 12** e separadas por nível.

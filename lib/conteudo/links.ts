@@ -5,7 +5,7 @@ import { PASTA_CONTEUDO, rotaDoArquivo } from "./arquivos";
 const EXTERNO = /^[a-z][a-z0-9+.-]*:/i;
 
 /**
- * Converte um link relativo escrito no .md (ex.: "../perguntas.md", "aulas/01-x.md", "../spring/")
+ * Converte um link relativo escrito no .md (ex.: "../perguntas/nivel-1.md", "aulas/01-x.md", "../spring/")
  * na rota do site, pra navegação funcionar igual no GitHub e no site.
  */
 export function resolverLink(href: string, arquivoAtual: string): string {

@@ -166,4 +166,4 @@ Quando RBAC não basta:
 autenticação · autorização · 401 · 403 · sessão · stateful · stateless · JWT · claims · sub · exp · Base64URL · assinatura · HS256 · RS256 · access token · refresh token · Bearer · httpOnly · Passport · strategy · APP_GUARD · secure by default · RBAC · ABAC · ownership · IDOR · bcrypt · argon2 · salt · rainbow table · throttler
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 07** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 07** e separadas por nível.

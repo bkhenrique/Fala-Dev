@@ -182,4 +182,4 @@ Os hooks de shutdown **só funcionam** se você chamar `app.enableShutdownHooks(
 injeção de dependência · inversão de controle · IoC container · Hollywood principle · acoplamento · DIP · SOLID · token · custom provider · useClass · useValue · useFactory · useExisting · @Inject · Symbol · escopo · singleton · request scope · transient · scope bubbling · AsyncLocalStorage · dependência circular · forwardRef · lifecycle hooks · enableShutdownHooks
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 04** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 04** e separadas por nível.

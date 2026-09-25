@@ -165,4 +165,4 @@ Métodos: `isPresent`/`isEmpty`, `ifPresent`, `map`, `flatMap`, `filter`, `orEls
 programação funcional · função pura · efeito colateral · declarativo · imperativo · classe anônima · lambda · efetivamente final · interface funcional · @FunctionalInterface · Function · Predicate · Consumer · Supplier · method reference · Stream · pipeline · operação intermediária · operação terminal · lazy evaluation · curto-circuito · map · flatMap · filter · reduce · Collectors · groupingBy · partitioningBy · parallel stream · ForkJoinPool · Optional · orElse · orElseGet · orElseThrow
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 08** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 08** e separadas por nível.

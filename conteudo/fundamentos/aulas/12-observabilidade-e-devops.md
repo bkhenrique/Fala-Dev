@@ -153,4 +153,4 @@ Cuidado comum a todas (menos recreate): **duas versões rodando ao mesmo tempo**
 monitoramento · observabilidade · logs · métricas · traces · span · log estruturado · correlation id · trace id · PII · golden signals · latência · tráfego · erros · saturação · RED · USE · percentil · p50 · p95 · p99 · OpenTelemetry · Prometheus · Grafana · alerta · alert fatigue · runbook · postmortem blameless · pirâmide de testes · teste unitário · teste de integração · E2E · teste de contrato · teste de carga · cobertura · TDD · CI · continuous delivery · continuous deployment · pipeline · trunk-based · feature flag · container · VM · kernel · Docker · Dockerfile · imagem · camada · registry · multi-stage build · Docker Compose · Kubernetes · pod · deployment · service · ingress · HPA · probe · declarativo · IaC · Terraform · recreate · rolling update · blue-green · canary · rollback · expand and contract
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 12** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 12** e separadas por nível.

@@ -171,4 +171,4 @@ Cuidados:
 thread · concorrência · paralelismo · thread-per-request · Runnable · Callable · ExecutorService · thread pool · Future · race condition · seção crítica · atomicidade · visibilidade · Java Memory Model · happens-before · deadlock · starvation · livelock · synchronized · volatile · AtomicInteger · CAS · ReentrantLock · ReadWriteLock · Semaphore · CountDownLatch · thread-safe · CompletableFuture · thenCompose · allOf · programação reativa · WebFlux · Virtual Threads · Projeto Loom · carrier thread · pinning
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 09** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 09** e separadas por nível.

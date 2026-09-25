@@ -168,4 +168,4 @@ Armadilha em produção: com **3 réplicas** da API, o `@Cron` roda **3 vezes**,
 12-Factor App · variável de ambiente · ConfigModule · ConfigService · fail fast · secret manager · BullModule · @InjectQueue · @Processor · WorkerHost · concurrency · event emitter · @OnEvent · desacoplamento · cron · expressão cron · @Interval · lock distribuído · job repetido · throttler · health check · terminus
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 09** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 09** e separadas por nível.

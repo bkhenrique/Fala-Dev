@@ -128,4 +128,4 @@ Frase ótima para entrevista quando perguntarem de decisões no MVP: *"Assumimos
 acoplamento · coesão · SOLID · single responsibility · open/closed · Liskov · interface segregation · dependency inversion · Strategy · injeção de dependência · DRY · WET · regra de três · KISS · YAGNI · overengineering · composição sobre herança · Lei de Demeter · train wreck · tell don't ask · separation of concerns · fail fast · code smell · god class · obsessão por primitivos · value object · feature envy · refatoração · regra do escoteiro · débito técnico · MVP
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 11** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 11** e separadas por nível.

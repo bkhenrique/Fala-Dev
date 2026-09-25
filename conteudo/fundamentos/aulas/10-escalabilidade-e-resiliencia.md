@@ -155,4 +155,4 @@ Sinalizar para quem produz que o consumidor está sobrecarregado (a fila crescen
 escalabilidade · escala vertical · scale up · escala horizontal · scale out · stateless · stateful · sticky session · cattle not pets · object storage · load balancer · round robin · least connections · consistent hashing · L4 · L7 · health check · liveness · readiness · autoscaling · teste de carga · capacity planning · disponibilidade · noves · SLI · SLO · SLA · error budget · SPOF · redundância · zona de disponibilidade · resiliência · falha em cascata · timeout · retry storm · circuit breaker · half-open · fallback · bulkhead · rate limiting · token bucket · 429 · load shedding · degradação graciosa · backpressure
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 10** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 10** e separadas por nível.

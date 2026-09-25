@@ -134,4 +134,4 @@ Um **embedding** é um vetor de números que representa o **significado** de um 
 gargalo · pool de conexões · HikariCP · PgBouncer · réplica de leitura · primário · replicação assíncrona · replication lag · read-your-writes · failover · alta disponibilidade · particionamento · sharding · chave de shard · hot shard · transação distribuída · sistema distribuído · teorema CAP · partição de rede · consistência · disponibilidade · CP · AP · PACELC · consistência forte · consistência eventual · BASE · NoSQL · documento · chave-valor · wide-column · grafo · Elasticsearch · índice invertido · série temporal · banco vetorial · embedding · similaridade de cosseno · RAG · persistência poliglota
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 06** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 06** e separadas por nível.

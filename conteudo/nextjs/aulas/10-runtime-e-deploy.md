@@ -110,4 +110,4 @@ Arquivos: `.env`, `.env.local` (não commitar), `.env.production`, `.env.develop
 next build · next start · Turbopack · Webpack · bundler · Node runtime · Edge runtime · Web APIs · cold start · latência · região · Vercel · vendor lock-in · self-hosting · Docker · output standalone · output export · cache handler · OpenNext · variáveis de ambiente · NEXT_PUBLIC_ · build time · instrumentation · OpenTelemetry · Sentry · health check
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 10** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 10** e separadas por nível.

@@ -13,7 +13,7 @@ Curso teórico em N aulas, na ordem.
 
 1. Leia **uma aula por vez**.
 2. Feche o arquivo e **explique em voz alta**.
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 
 ## Aulas

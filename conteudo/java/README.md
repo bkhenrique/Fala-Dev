@@ -1,7 +1,7 @@
 ---
 titulo: Java
 tipo: linguagem
-ordem: 5
+ordem: 6
 descricao: JVM, memória e GC, orientação a objetos, collections, exceções, streams, concorrência e testes.
 ---
 # Java
@@ -12,7 +12,7 @@ Curso teórico em 10 aulas sobre a linguagem e a plataforma. O framework fica na
 
 1. Leia **uma aula por vez**.
 2. Feche o arquivo e **explique em voz alta**.
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 
 ## Aulas

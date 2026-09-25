@@ -153,4 +153,4 @@ Trade-offs do Redis: memória é cara e limitada; é mais uma peça de infraestr
 cache · hit · miss · hit rate · stale · CDN · cache local · cache distribuído · Redis · Memcached · cache-aside · lazy loading · read-through · write-through · write-behind · TTL · eviction · LRU · LFU · invalidação de cache · chave versionada · cache stampede · thundering herd · single-flight · stale-while-revalidate · jitter · cache warming · cache penetration · Bloom filter · hot key · Cache-Control private · sorted set · RDB · AOF · Redis Cluster · rate limiting · lock distribuído · pub/sub
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 07** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 07** e separadas por nível.

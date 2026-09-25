@@ -185,4 +185,4 @@ Detalhe que cai: `List<Integer>` **não é** subtipo de `List<Number>` (generics
 Collection · List · Set · Map · Queue · Deque · ArrayList · LinkedList · HashSet · LinkedHashSet · TreeSet · HashMap · LinkedHashMap · TreeMap · ArrayDeque · PriorityQueue · Big O · amortizado · bucket · colisão · load factor · rehash · árvore rubro-negra · LRU · ConcurrentHashMap · CopyOnWriteArrayList · BlockingQueue · fail-fast · ConcurrentModificationException · coleção imutável · generics · type erasure · bounded type · wildcard · PECS · invariância
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 06** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 06** e separadas por nível.

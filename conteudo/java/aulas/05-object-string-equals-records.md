@@ -178,4 +178,4 @@ Quando **não** usar: **entidades JPA** (precisam ser mutáveis, ter construtor 
 Object · equals · hashCode · toString · igualdade de referência · igualdade lógica · contrato equals/hashCode · bucket · colisão · reflexivo · simétrico · transitivo · Objects.hash · String imutável · String Pool · literal · StringBuilder · StringBuffer · text block · record · construtor canônico · construtor compacto · value object · DTO · Lombok · boilerplate
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 05** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 05** e separadas por nível.

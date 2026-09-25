@@ -198,4 +198,4 @@ Boa prática: o **service lança erros de domínio** (sem saber de HTTP), e um *
 request lifecycle · cross-cutting concerns · middleware · guard · CanActivate · ExecutionContext · Reflector · interceptor · CallHandler · RxJS · Observable · AOP · pipe · PipeTransform · ValidationPipe · ParseIntPipe · exception filter · HttpException · ArgumentsHost · erro de domínio · APP_GUARD
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 05** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 05** e separadas por nível.

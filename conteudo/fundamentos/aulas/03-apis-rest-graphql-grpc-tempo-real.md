@@ -185,4 +185,4 @@ WebSocket: mais poderoso, mas mais complexo de escalar: conexões **persistentes
 API · contrato · breaking change · REST · recurso · representação · stateless · interface uniforme · Richardson · HATEOAS · RPC · versionamento · paginação offset · paginação cursor · keyset · Idempotency-Key · Problem Details · OpenAPI · Swagger · code-first · design-first · GraphQL · over-fetching · under-fetching · resolver · DataLoader · gRPC · Protocol Buffers · webhook · HMAC · polling · long polling · SSE · WebSocket · full-duplex · pub/sub
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 03** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 03** e separadas por nível.

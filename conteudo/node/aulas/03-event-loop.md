@@ -208,4 +208,4 @@ Como resolver:
 event loop · tick · fases · timers · poll · check · macrotask · microtask · process.nextTick · setImmediate · queueMicrotask · starvation · event loop lag · ReDoS · chunking
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 03** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 03** e separadas por nível.

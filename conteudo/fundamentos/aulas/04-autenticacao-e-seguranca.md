@@ -153,4 +153,4 @@ Com query parametrizada (`WHERE email = $1`), o input é tratado **como dado**, 
 autenticação · autorização · 401 · 403 · RBAC · ABAC · ownership · IDOR · menor privilégio · sessão · token · JWT · claims · access token · refresh token · OAuth 2.0 · resource owner · client · authorization server · resource server · Authorization Code · PKCE · Client Credentials · scope · OpenID Connect · ID Token · SSO · MFA · hash · salt · bcrypt · argon2 · rainbow table · Same-Origin Policy · origem · CORS · preflight · OWASP · SQL injection · query parametrizada · XSS · CSP · CSRF · SSRF · PII · LGPD · defesa em profundidade
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 04** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 04** e separadas por nível.

@@ -195,4 +195,4 @@ public class LojaApplication {
 Spring Framework · Java EE · IoC container · ApplicationContext · bean · component scan · estereótipo · @Component · @Service · @Repository · @RestController · @Configuration · @Bean · injeção por construtor · @Autowired · @Primary · @Qualifier · escopo · singleton · prototype · stateless · proxy · AOP · aspecto · self-invocation · Spring Boot · auto-configuration · @Conditional · convention over configuration · starter · Tomcat embutido · jar executável · HikariCP · application.yml · profile · @ConfigurationProperties · Actuator · @SpringBootApplication
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 01** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 01** e separadas por nível.

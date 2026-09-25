@@ -197,4 +197,4 @@ double area(Forma f) {
 herança · extends · super · is-a · has-a · herança simples · Object · polimorfismo · dynamic dispatch · Strategy · Open/Closed · overload · override · @Override · abstração · classe abstrata · método abstrato · Template Method · interface · implements · default method · composição · delegação · fragile base class · Liskov · SOLID · sealed · pattern matching · switch expression
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 04** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 04** e separadas por nível.

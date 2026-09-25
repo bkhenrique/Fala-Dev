@@ -178,4 +178,4 @@ Custos:
 fila · job · payload · producer · consumer · worker · broker · desacoplamento · 202 Accepted · polling · SSE · webhook · retry · falha transitória · backoff exponencial · jitter · thundering herd · DLQ · poison message · at-least-once · idempotência · chave de idempotência · stalled job · lock · concurrency · rate limit · consistência eventual
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 11** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 11** e separadas por nível.

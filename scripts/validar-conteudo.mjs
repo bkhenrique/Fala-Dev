@@ -10,6 +10,7 @@ const LIMITE_LINHAS = 500;
 const TIPOS = ["fundamentos", "linguagem", "framework"];
 const NOME_ARQUIVO = /^[a-z0-9]+(-[a-z0-9]+)*\.md$/;
 const NOME_AULA = /^(\d{2})-[a-z0-9]+(-[a-z0-9]+)*\.md$/;
+const NIVEIS = [1, 2, 3];
 
 const erros = [];
 const rel = (p) => path.relative(RAIZ, p);
@@ -46,7 +47,8 @@ function validarTrilha(id) {
   const dir = path.join(CONTEUDO, id);
   const readme = path.join(dir, "README.md");
 
-  for (const obrigatorio of ["README.md", "glossario.md", "perguntas.md", "aulas"]) {
+  const obrigatorios = ["README.md", "glossario.md", "aulas", "perguntas/README.md", ...NIVEIS.map((n) => `perguntas/nivel-${n}.md`)];
+  for (const obrigatorio of obrigatorios) {
     if (!fs.existsSync(path.join(dir, obrigatorio))) {
       erro(dir, `a trilha precisa ter ${obrigatorio} (copie de _modelos/trilha/).`);
     }
@@ -64,7 +66,11 @@ function validarTrilha(id) {
 
   const dirAulas = path.join(dir, "aulas");
   if (fs.existsSync(dirAulas)) validarAulas(dirAulas, content, readme);
-  if (fs.existsSync(path.join(dir, "perguntas.md"))) validarPerguntas(path.join(dir, "perguntas.md"), dirAulas);
+  for (const n of NIVEIS) {
+    const arquivo = path.join(dir, "perguntas", `nivel-${n}.md`);
+    if (fs.existsSync(arquivo)) validarPerguntas(arquivo, n, dirAulas);
+  }
+  validarIndicePerguntas(path.join(dir, "perguntas"));
   if (fs.existsSync(path.join(dir, "glossario.md"))) validarGlossario(path.join(dir, "glossario.md"));
 }
 
@@ -105,14 +111,10 @@ function validarAulas(dirAulas, conteudoReadme, readme) {
   }
 }
 
-function validarPerguntas(arquivo, dirAulas) {
+function validarPerguntas(arquivo, nivel, dirAulas) {
   const texto = ler(arquivo);
-  const posicoesNivel = [1, 2, 3].map((n) => texto.search(new RegExp(`^## Nível ${n} — `, "m")));
-  posicoesNivel.forEach((pos, i) => {
-    if (pos < 0) erro(arquivo, `falta o cabeçalho "## Nível ${i + 1} — ..." (veja _modelos/trilha/perguntas.md).`);
-  });
-  if (posicoesNivel.every((p) => p >= 0) && !(posicoesNivel[0] < posicoesNivel[1] && posicoesNivel[1] < posicoesNivel[2])) {
-    erro(arquivo, "os níveis devem estar na ordem 1, 2, 3.");
+  if (!new RegExp(`^# .+ — perguntas, nível ${nivel}: `).test(texto)) {
+    erro(arquivo, `a primeira linha deve ser "# Trilha — perguntas, nível ${nivel}: ..." (veja _modelos/trilha/perguntas/).`, 1);
   }
 
   const linhas = texto.split("\n");
@@ -124,8 +126,8 @@ function validarPerguntas(arquivo, dirAulas) {
     if (Number(m[1]) !== esperado) erro(arquivo, `pergunta numerada ${m[1]}, esperado ${esperado}. Renumere as seguintes.`, n);
     esperado = Number(m[1]) + 1;
 
-    const aula = linhas[i + 1]?.match(/^<sub>Aula \[\d{2} — .+\]\(aulas\/([^)]+)\)<\/sub>$/);
-    if (!aula) erro(arquivo, 'depois da pergunta vem a linha "<sub>Aula [NN — Título](aulas/NN-arquivo.md)</sub>".', n + 1);
+    const aula = linhas[i + 1]?.match(/^<sub>Aula \[\d{2} — .+\]\(\.\.\/aulas\/([^)]+)\)<\/sub>$/);
+    if (!aula) erro(arquivo, 'depois da pergunta vem a linha "<sub>Aula [NN — Título](../aulas/NN-arquivo.md)</sub>".', n + 1);
     else if (!fs.existsSync(path.join(dirAulas, aula[1]))) erro(arquivo, `a pergunta aponta pra aulas/${aula[1]}, que não existe.`, n + 1);
 
     if (linhas[i + 2] !== "<details><summary>Ver resposta</summary>" || linhas[i + 3] !== "") {
@@ -136,6 +138,20 @@ function validarPerguntas(arquivo, dirAulas) {
     if (fim < 0 || (proxima > 0 && fim > proxima)) erro(arquivo, "a resposta não fecha com </details>.", n);
     else if (linhas[fim - 1] !== "") erro(arquivo, "deixe uma linha em branco antes do </details>.", fim + 1);
   });
+}
+
+function validarIndicePerguntas(dir) {
+  const indice = path.join(dir, "README.md");
+  if (!fs.existsSync(indice)) return;
+  const texto = ler(indice);
+  for (const n of NIVEIS) {
+    const arquivo = path.join(dir, `nivel-${n}.md`);
+    if (!fs.existsSync(arquivo)) continue;
+    const real = ler(arquivo).match(/^\*\*\d+\. /gm)?.length ?? 0;
+    const linha = texto.match(new RegExp(`\\(nivel-${n}\\.md\\).*\\| (\\d+) \\|$`, "m"));
+    if (!linha) erro(indice, `falta a linha do nível ${n} na tabela (veja _modelos/trilha/perguntas/README.md).`);
+    else if (Number(linha[1]) !== real) erro(indice, `a tabela diz ${linha[1]} perguntas no nível ${n}, mas o arquivo tem ${real}.`);
+  }
 }
 
 function validarGlossario(arquivo) {

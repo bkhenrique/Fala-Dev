@@ -132,4 +132,4 @@ Além do HTML, o navegador recebe o **RSC Payload** (*React Server Component Pay
 hydration · hydrateRoot · event handler · hydration mismatch · useEffect · dynamic import · ssr: false · suppressHydrationWarning · React Server Components · Client Components · hidratação seletiva · ilhas de interatividade · Suspense · streaming · RSC Payload · reconciliação · navegação client-side · FCP · LCP
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 03** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 03** e separadas por nível.

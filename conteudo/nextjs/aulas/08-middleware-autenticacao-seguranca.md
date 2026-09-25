@@ -127,4 +127,4 @@ Configurados no `next.config` (`headers()`) ou no middleware:
 middleware · proxy · matcher · redirect · rewrite · Edge runtime · Node runtime · checagem otimista · defesa em profundidade · CVE · DAL · server-only · Auth.js · sessão stateless · database session · cookie httpOnly · Secure · SameSite · XSS · CSRF · IDOR · SSRF · dangerouslySetInnerHTML · sanitização · CSP · clickjacking · HSTS · i18n · teste A/B
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 08** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 08** e separadas por nível.

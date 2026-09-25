@@ -2,8 +2,8 @@
 titulo: Spring
 tipo: framework
 base: java
-ordem: 6
-descricao: IoC, Spring Boot, API REST, JPA, Spring Security, mensageria com Kafka e RabbitMQ, e Spring em produção.
+ordem: 7
+descricao: IoC, Spring Boot, Web, JPA, segurança, testes, mensageria e microsserviços.
 ---
 # Spring
 
@@ -13,7 +13,7 @@ Curso teórico do ecossistema Spring. Pré-requisito: a trilha de [Java](../java
 
 1. Leia **uma aula por vez**.
 2. Feche o arquivo e **explique em voz alta**.
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 
 ## Aulas
@@ -23,6 +23,9 @@ Curso teórico do ecossistema Spring. Pré-requisito: a trilha de [Java](../java
 - [ ] [03 — Spring Security](aulas/03-spring-security.md)
 - [ ] [04 — Eventos, processamento assíncrono e mensageria](aulas/04-eventos-assincrono-e-mensageria.md)
 - [ ] [05 — Spring em produção](aulas/05-spring-em-producao.md)
+
+- [ ] [06 — Testes no Spring: unitários, slices e integração](aulas/06-testes-no-spring.md)
+- [ ] [07 — Microsserviços com Spring Cloud](aulas/07-microsservicos-com-spring-cloud.md)
 
 ## Revisão rápida
 

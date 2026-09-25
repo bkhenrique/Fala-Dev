@@ -155,4 +155,4 @@ Por que containers em vez de cluster? Porque o orquestrador já faz o papel do c
 paralelismo · núcleo · worker threads · workerData · postMessage · structured clone · SharedArrayBuffer · pool de workers · child process · spawn · exec · fork · IPC · command injection · cluster · primary · PM2 · zero-downtime · container · orquestrador · réplica · load balancer · autoscaling · escalabilidade horizontal · escalabilidade vertical · stateless
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 09** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 09** e separadas por nível.

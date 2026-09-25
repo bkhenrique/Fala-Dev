@@ -165,4 +165,4 @@ O navegador **nunca** vê as URLs internas nem as chaves. Por isso **o front nã
 mutation · Server Action · use server · FormData · progressive enhancement · useActionState · useFormStatus · useOptimistic · UI otimista · endpoint público · autenticação · autorização · validação · Zod · CSRF · Origin · IDOR · Route Handler · route.ts · NextRequest · NextResponse · webhook · assinatura · BFF · PII
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 07** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 07** e separadas por nível.

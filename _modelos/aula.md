@@ -38,5 +38,5 @@ Definição, analogia, diagrama ou código curto. Quantas seções forem precisa
 termo · outro termo · mais um
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula NN** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula NN** e separadas por nível.
 ```

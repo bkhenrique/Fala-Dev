@@ -180,4 +180,4 @@ Cuidados em produção: migrations que travam tabela grande (ex: adicionar colun
 ORM · leaky abstraction · query builder · SQL injection · TypeORM · Prisma · entity · schema · repository pattern · Active Record · Data Mapper · transação · ACID · atomicidade · migration · synchronize · expand and contract · N+1 · índice · paginação por cursor · pool de conexões
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 08** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 08** e separadas por nível.

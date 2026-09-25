@@ -161,4 +161,4 @@ Custo: criar mais objetos (geralmente irrelevante).
 classe · objeto · instância · atributo · método · construtor · sobrecarga de construtor · this · modificador de acesso · public · protected · package-private · private · encapsulamento · invariante · getter · setter · modelo anêmico · modelo rico · static · constante · método utilitário · final · imutabilidade · thread-safe · cópia defensiva · pacote
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 03** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 03** e separadas por nível.

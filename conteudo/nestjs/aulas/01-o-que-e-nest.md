@@ -146,4 +146,4 @@ Quando **não** usaria: um script, uma função serverless pequena, um microserv
 framework opinativo · minimalista · arquitetura · TypeScript · decorator · módulo · injeção de dependência · abstração de plataforma · Express · Fastify · boilerplate · separação de responsabilidades · testabilidade · CLI
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 01** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 01** e separadas por nível.

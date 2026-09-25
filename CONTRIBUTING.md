@@ -39,7 +39,7 @@ pnpm build      # gera o site estático (o mesmo que roda no deploy)
 | Contribuição | Onde | Modelo |
 |---|---|---|
 | **Aula nova** | `conteudo/<trilha>/aulas/NN-nome.md` + link no `README.md` da trilha | [`_modelos/aula.md`](_modelos/aula.md) |
-| **Pergunta nova** | `conteudo/<trilha>/perguntas.md`, no **nível** certo | [`_modelos/pergunta.md`](_modelos/pergunta.md) |
+| **Pergunta nova** | `conteudo/<trilha>/perguntas/nivel-N.md`, no **nível** certo | [`_modelos/pergunta.md`](_modelos/pergunta.md) |
 | **Termo de glossário** | `conteudo/<trilha>/glossario.md` | [`_modelos/termo.md`](_modelos/termo.md) |
 | **Trilha nova** (ex.: `laravel/`) | `conteudo/<nome>/` | [`_modelos/trilha/`](_modelos/trilha/) (copie a pasta inteira) |
 | **Linha no dicionário** | [`conteudo/dicionario-do-dia-a-dia.md`](conteudo/dicionario-do-dia-a-dia.md) | Siga as colunas da tabela |
@@ -95,13 +95,13 @@ Copie [`_modelos/aula.md`](_modelos/aula.md). Seções obrigatórias (o validado
 4. `## N. Como falar na entrevista`: uma ou mais perguntas típicas com resposta modelo em citação (`>`), escrita como o candidato falaria: definição, pra que serve, exemplo e trade-off, em 3 a 6 frases.
 5. `## N. Resumo`: bullets curtos com o que não pode faltar.
 6. `## Termos desta aula`: o vocabulário, separado por ` · `.
-7. `## Treine`: a frase padrão apontando pro `perguntas.md`.
+7. `## Treine`: a frase padrão apontando pra pasta `perguntas/`.
 
 Tamanho: entre **100 e 250 linhas** costuma ser o ideal. **Máximo 500**; se passar, divida em duas aulas.
 
 ### Perguntas
 
-Copie [`_modelos/pergunta.md`](_modelos/pergunta.md). Cada pergunta fica no **nível** certo:
+Copie [`_modelos/pergunta.md`](_modelos/pergunta.md). As perguntas ficam em `perguntas/`, **um arquivo por nível** (`nivel-1.md`, `nivel-2.md`, `nivel-3.md`), e cada pergunta vai no nível certo:
 
 | Nível | Tipo | Exemplo |
 |---|---|---|
@@ -113,7 +113,7 @@ Formato exato (o validador confere):
 
 ```markdown
 **12. Pergunta aqui?**
-<sub>Aula [03 — Título da aula](aulas/03-nome-da-aula.md)</sub>
+<sub>Aula [03 — Título da aula](../aulas/03-nome-da-aula.md)</sub>
 <details><summary>Ver resposta</summary>
 
 Resposta curta: de 2 a 6 frases, na ordem definição → pra que serve → exemplo → trade-off.
@@ -121,7 +121,8 @@ Resposta curta: de 2 a 6 frases, na ordem definição → pra que serve → exem
 </details>
 ```
 
-- Numeração **contínua** no arquivo inteiro: ao inserir uma pergunta no meio, renumere as seguintes.
+- Dentro do arquivo, as perguntas ficam **agrupadas pela aula**, em ordem. Numeração começa em 1 e é **contínua**: ao inserir no meio, renumere as seguintes.
+- Atualize a contagem na tabela do `perguntas/README.md` (o validador confere).
 - A pergunta tem que ser respondível **com o que está na aula** indicada.
 
 ### Glossário
@@ -141,7 +142,7 @@ Um conceito geral pode aparecer de novo na trilha de uma stack, mostrando **como
 ### Trilha nova
 
 - Pasta em `conteudo/`, **nome curto, minúsculo, sem acento** (`php`, `laravel`, `spring`), **sem pasta dentro de pasta**.
-- Copie [`_modelos/trilha/`](_modelos/trilha/) e preencha o frontmatter do `README.md`:
+- Copie [`_modelos/trilha/`](_modelos/trilha/) (README, glossário, `aulas/` e `perguntas/`) e preencha o frontmatter do `README.md`:
 
 ```md
 ---
@@ -158,7 +159,7 @@ O site monta o menu, os cards da home e a contagem de aulas e perguntas sozinho 
 ### Arquivos e links
 
 - Nome de arquivo em **minúsculas, com hífen, sem acento**: `filas-bullmq.md`. Aulas com prefixo de dois dígitos: `04-libuv-thread-pool.md`.
-- Links entre arquivos são **relativos ao `.md`** (`../perguntas.md`, `aulas/03-event-loop.md`). O site converte pra rota sozinho, e o link funciona no GitHub também.
+- Links entre arquivos são **relativos ao `.md`** (`../perguntas/nivel-1.md`, `aulas/03-event-loop.md`). O site converte pra rota sozinho, e o link funciona no GitHub também.
 - Não copie conteúdo de cursos pagos, livros ou blogs sem permissão. Se usou uma fonte como base, cite no fim da página.
 
 ---
@@ -167,9 +168,9 @@ O site monta o menu, os cards da home e a contagem de aulas e perguntas sozinho 
 
 Roda na sua máquina e no CI de todo PR:
 
-- Trilha tem `README.md` (com `titulo`, `tipo`, `ordem`, `descricao` e `base` válida), `glossario.md`, `perguntas.md` e `aulas/`.
+- Trilha tem `README.md` (com `titulo`, `tipo`, `ordem`, `descricao` e `base` válida), `glossario.md`, `aulas/` e `perguntas/` (índice + um arquivo por nível).
 - Aulas com nome `NN-nome.md`, numeração sem buracos, título `# Aula NN — ...`, seções obrigatórias e listadas no README da trilha.
-- Perguntas com os três níveis em ordem, numeração contínua, linha `<sub>` apontando pra uma aula que existe e resposta dentro de `<details>` com as linhas em branco.
+- Perguntas: título do nível, numeração contínua, linha `<sub>` apontando pra uma aula que existe, resposta dentro de `<details>` com as linhas em branco, e contagem do índice batendo com os arquivos.
 - Termos do glossário com os três campos.
 - Nomes de arquivo no padrão, links relativos que existem e nenhum arquivo com mais de **500 linhas** (conteúdo e código).
 

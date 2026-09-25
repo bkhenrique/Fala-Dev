@@ -140,4 +140,4 @@ Dica de entrevista: **não decore a lista; conecte cada padrão a um lugar onde 
 Maven · pom.xml · ciclo de vida · Maven Central · GAV · escopo de dependência · Gradle · Kotlin DSL · wrapper · JUnit 5 · AssertJ · Mockito · mock · stub · fake · spy · verify · Testcontainers · H2 · @WebMvcTest · @DataJpaTest · @SpringBootTest · @MockitoBean · test slice · pirâmide de testes · TDD · design patterns · Gang of Four · Singleton · Factory · Builder · Adapter · Decorator · Proxy · Facade · Strategy · Observer · Template Method · Chain of Responsibility · Command · SOLID
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 10** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 10** e separadas por nível.

@@ -150,4 +150,4 @@ Um Server Component pode ser renderizado no **build** (estático) ou na **requis
 React Server Components · Server Component · Client Component · use client · fronteira · bundle · folhas da árvore · composição · children · serialização · RSC Payload · server-only · NEXT_PUBLIC_ · Context · Provider · wrapper
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 05** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 05** e separadas por nível.

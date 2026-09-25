@@ -113,4 +113,4 @@ A JVM também roda **outras linguagens**: **Kotlin**, Scala, Groovy, Clojure. To
 JVM · JRE · JDK · bytecode · javac · .class · .jar · portabilidade · write once run anywhere · HotSpot · interpretador · JIT · hot spot · warm-up · AOT · GraalVM · native image · class loader · classpath · OpenJDK · Temurin · Corretto · LTS · records · sealed classes · virtual threads · Kotlin
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 01** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 01** e separadas por nível.

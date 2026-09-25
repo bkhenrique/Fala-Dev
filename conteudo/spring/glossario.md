@@ -56,3 +56,29 @@ Cada termo tem três partes: **Em uma frase** (a definição curta), **Traduzind
 - **Em uma frase:** biblioteca de resiliência com circuit breaker, retry, rate limiter, bulkhead e time limiter, integrada ao Spring.
 - **Traduzindo:** os disjuntores e amortecedores das chamadas pra serviços externos.
 - **Como falar:** "Toda chamada externa tem timeout, e as críticas têm circuit breaker com fallback e retry só quando a operação é idempotente."
+
+
+### Test slice
+- **Em uma frase:** teste que carrega apenas uma fatia configurada do contexto, como a camada MVC.
+- **Traduzindo:** uma montagem parcial do Spring para testar uma camada.
+- **Como falar:** "Uso @WebMvcTest para controller e deixo o contexto completo para integrações que realmente dependem dele."
+
+### Testcontainers
+- **Em uma frase:** biblioteca que inicia serviços reais em containers descartáveis para testes.
+- **Traduzindo:** banco ou broker de verdade, isolado para o teste.
+- **Como falar:** "Uso Testcontainers quando diferenças entre o banco de teste e o de produção podem esconder defeitos."
+
+### Spring Cloud Gateway
+- **Em uma frase:** gateway de API com roteamento e filtros para aplicações distribuídas.
+- **Traduzindo:** a recepção que encaminha chamadas e aplica políticas comuns.
+- **Como falar:** "O gateway cuida da borda; as regras de domínio permanecem nos serviços."
+
+### Service discovery
+- **Em uma frase:** resolução dinâmica do endereço de instâncias de um serviço por um nome lógico.
+- **Traduzindo:** procurar uma unidade disponível pelo nome, em vez de decorar seu IP.
+- **Como falar:** "Em Kubernetes, DNS e Services podem resolver descoberta sem introduzir um registry à parte."
+
+### Circuit breaker
+- **Em uma frase:** mecanismo que interrompe chamadas a uma dependência com falhas persistentes e testa depois se ela voltou.
+- **Traduzindo:** um disjuntor que evita sobrecarregar um serviço já indisponível.
+- **Como falar:** "Combino circuit breaker com timeout e bulkhead; retry só quando é seguro repetir."

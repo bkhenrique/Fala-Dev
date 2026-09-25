@@ -83,3 +83,29 @@ Cada termo tem três partes: **Em uma frase** (a definição curta), **Traduzind
 - **Em uma frase:** semver = versão `MAJOR.MINOR.PATCH`; lockfile = trava as versões exatas instaladas.
 - **Traduzindo:** MAJOR quebra, MINOR adiciona, PATCH corrige. O lockfile garante que todo mundo instala a mesma coisa.
 - **Como falar:** "Commito o lockfile pra ter *builds* reproduzíveis."
+
+
+### Test runner node:test
+- **Em uma frase:** runner de testes embutido no Node, com testes, subtestes, hooks e assertions.
+- **Traduzindo:** o kit básico de testes que já vem com o runtime.
+- **Como falar:** "Começo com node:test e substituo dependências externas na fronteira; integração precisa validar os componentes reais."
+
+### Mock e stub
+- **Em uma frase:** substitutos controlados para uma dependência durante um teste.
+- **Traduzindo:** um dublê com respostas combinadas.
+- **Como falar:** "Mock ajuda a simular falhas e verificar interação, mas não prova que a integração real funciona."
+
+### WebSocket
+- **Em uma frase:** protocolo persistente e bidirecional sobre uma conexão iniciada por handshake HTTP.
+- **Traduzindo:** uma linha aberta em que cliente e servidor podem falar a qualquer momento.
+- **Como falar:** "Uso WebSocket quando a interação precisa ser bidirecional e frequente, como num chat."
+
+### Server-Sent Events (SSE)
+- **Em uma frase:** fluxo unidirecional de eventos do servidor ao cliente sobre HTTP.
+- **Traduzindo:** uma transmissão ao vivo que o navegador pode reconectar.
+- **Como falar:** "SSE simplifica notificações em que só o servidor precisa empurrar dados; o cliente envia ações por HTTP normal."
+
+### Adapter pub/sub
+- **Em uma frase:** integração que distribui eventos de WebSocket entre instâncias de uma aplicação.
+- **Traduzindo:** o canal comum que permite às réplicas avisarem umas às outras.
+- **Como falar:** "Com várias réplicas, uso adapter compartilhado e autorizo cada canal; memória local não alcança todos os sockets."

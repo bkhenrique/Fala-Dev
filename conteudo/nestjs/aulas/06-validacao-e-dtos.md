@@ -160,4 +160,4 @@ Com `@nestjs/swagger`, os DTOs viram documentação **OpenAPI** automaticamente 
 borda · input validation · DTO · contrato · class-validator · class-transformer · ValidationPipe · whitelist · forbidNonWhitelisted · transform · mass assignment · 400 Bad Request · 422 · mapped types · DRY · Zod · schema · inferência de tipo · serialização · @Exclude · ClassSerializerInterceptor · response DTO · OpenAPI · Swagger
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 06** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 06** e separadas por nível.

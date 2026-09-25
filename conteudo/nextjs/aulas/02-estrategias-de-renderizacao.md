@@ -143,4 +143,4 @@ A decisão é **por rota** (e até por componente), não para o site inteiro. Um
 CSR · SSR · SSG · ISR · PPR · TTFB · CDN · build time · request time · rota dinâmica · rota estática · force-dynamic · generateStaticParams · getServerSideProps · getStaticProps · getStaticPaths · revalidate · stale-while-revalidate · on-demand revalidation · revalidatePath · revalidateTag · Cache Components · SWR · TanStack Query
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 02** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 02** e separadas por nível.

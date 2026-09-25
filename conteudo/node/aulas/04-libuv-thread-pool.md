@@ -141,4 +141,4 @@ O thread pool **não** executa o seu JavaScript. Se você tem um `for` pesado, o
 libuv · thread pool · UV_THREADPOOL_SIZE · epoll · kqueue · IOCP · dns.lookup · pbkdf2 · zlib · gargalo · worker threads
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 04** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 04** e separadas por nível.

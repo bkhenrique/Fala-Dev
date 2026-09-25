@@ -189,4 +189,4 @@ Isso se chama **package by feature** e combina com a ideia de módulo: tudo sobr
 módulo · AppModule · controller · provider · service · repository · @Injectable · imports · exports · encapsulamento · singleton · @Global · dynamic module · forRoot · forFeature · forRootAsync · package by feature · grafo de dependências
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 03** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 03** e separadas por nível.

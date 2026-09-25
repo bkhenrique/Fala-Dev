@@ -170,4 +170,4 @@ Tem **4 parâmetros** `(err, req, res, next)`. Quando um middleware chama `next(
 http.createServer · IncomingMessage · ServerResponse · request lifecycle · TCP · TLS · keep-alive · Express · middleware · next · pipeline · Chain of Responsibility · cross-cutting concerns · error handler · Fastify · JSON Schema · timeout · health check
 
 ## Treine
-As perguntas desta aula estão em [`../perguntas.md`](../perguntas.md), marcadas com **Aula 10** e separadas por nível.
+As perguntas desta aula estão em [`../perguntas/`](../perguntas/), marcadas com **Aula 10** e separadas por nível.

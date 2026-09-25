@@ -2,17 +2,17 @@
 titulo: Node.js
 tipo: linguagem
 ordem: 2
-descricao: Event Loop, libuv, Promises, streams, escala, filas e Node em produção.
+descricao: Event Loop, libuv, Promises, streams, escala, filas, testes e tempo real.
 ---
 # Node.js
 
-Curso teórico em 12 aulas, na ordem. Cada aula explica o assunto do zero, com analogias, exemplos de código, **como falar na entrevista**, resumo e os termos que você precisa dominar.
+Curso teórico em 14 aulas, na ordem. Cada aula explica o assunto do zero, com analogias, exemplos de código, **como falar na entrevista**, resumo e os termos que você precisa dominar.
 
 ## Como estudar
 
 1. Leia **uma aula por vez**, com calma.
 2. No fim da aula, feche o arquivo e **explique o assunto em voz alta** (ou grave um áudio).
-3. Responda as perguntas marcadas com a aula em [`perguntas.md`](perguntas.md) antes de abrir as respostas.
+3. Responda as perguntas marcadas com a aula em [`perguntas/`](perguntas/) antes de abrir as respostas.
 4. Marque a aula como concluída quando conseguir explicar sem olhar.
 5. Uma vez por semana, faça todas as perguntas de um nível de uma vez.
 
@@ -30,6 +30,9 @@ Curso teórico em 12 aulas, na ordem. Cada aula explica o assunto do zero, com a
 - [ ] [10 — HTTP no Node e como o Express funciona](aulas/10-http-e-express.md)
 - [ ] [11 — Filas e background jobs com BullMQ](aulas/11-filas-bullmq.md)
 - [ ] [12 — Node em produção](aulas/12-node-em-producao.md)
+
+- [ ] [13 — Testes em Node: unitários, integração e mocks](aulas/13-testes-em-node.md)
+- [ ] [14 — Tempo real: WebSocket, SSE e escala](aulas/14-tempo-real-websocket-e-sse.md)
 
 ## Revisão rápida
 
