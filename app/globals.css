@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #18181b;
+}
+
+[data-theme="dark"] {
+  --background: #0b0b0e;
+  --foreground: #e4e4e7;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Respostas escondidas das perguntas (<details> vindo do Markdown) */
+.prose details {
+  margin: 0.5rem 0 1.75rem;
+  border: 1px solid var(--color-zinc-200);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+[data-theme="dark"] .prose details {
+  border-color: var(--color-zinc-800);
+}
+
+.prose details > summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--color-emerald-700);
+}
+
+[data-theme="dark"] .prose details > summary {
+  color: var(--color-emerald-400);
+}
+
+.prose details[open] > summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Linha "Aula NN — ..." logo abaixo do título de cada pergunta */
+.prose sub {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  vertical-align: baseline;
+}
+
+/* O conteúdo já escreve as aspas e as crases; o plugin de tipografia duplicaria */
+.prose blockquote p::before,
+.prose blockquote p::after,
+.prose code::before,
+.prose code::after {
+  content: none;
+}
+
+.prose ul.contains-task-list {
+  padding-left: 0;
+}
