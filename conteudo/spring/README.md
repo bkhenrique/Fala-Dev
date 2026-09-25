@@ -3,7 +3,7 @@ titulo: Spring
 tipo: framework
 base: java
 ordem: 6
-descricao: IoC, beans, Spring Boot, proxies, API REST, JPA/Hibernate e @Transactional.
+descricao: IoC, Spring Boot, API REST, JPA, Spring Security, mensageria com Kafka e RabbitMQ, e Spring em produção.
 ---
 # Spring
 
@@ -20,6 +20,9 @@ Curso teórico do ecossistema Spring. Pré-requisito: a trilha de [Java](../java
 
 - [ ] [01 — Spring Core e Spring Boot](aulas/01-spring-core-e-boot.md)
 - [ ] [02 — Spring Web e Spring Data JPA](aulas/02-spring-web-e-jpa.md)
+- [ ] [03 — Spring Security](aulas/03-spring-security.md)
+- [ ] [04 — Eventos, processamento assíncrono e mensageria](aulas/04-eventos-assincrono-e-mensageria.md)
+- [ ] [05 — Spring em produção](aulas/05-spring-em-producao.md)
 
 ## Revisão rápida
 

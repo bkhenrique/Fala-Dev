@@ -1,8 +1,8 @@
 # Dicionário do dia a dia
 
-Do jeito que eu falo → o nome técnico → como soar numa entrevista.
+Do jeito que a gente fala no dia a dia → o nome técnico → como falar numa entrevista.
 
-A ideia é ler a coluna da esquerda, reconhecer algo que já fiz, e decorar as outras duas.
+Leia a coluna da esquerda, reconheça algo que você já fez, e treine as outras duas em voz alta.
 
 ## Backend e API
 
@@ -67,4 +67,4 @@ A ideia é ler a coluna da esquerda, reconhecer algo que já fiz, e decorar as o
 
 ---
 
-> Achou um novo? Adicione aqui uma linha. Quanto mais do **seu** jeito de falar estiver na coluna da esquerda, melhor.
+> Conhece uma expressão que falta aqui? Abra um PR adicionando uma linha na tabela certa.

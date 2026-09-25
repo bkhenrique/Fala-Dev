@@ -13,4 +13,4 @@
 - [ ] Conteúdo é teoria e fala de entrevista, não tutorial passo a passo
 - [ ] Nenhum arquivo passou de 500 linhas
 - [ ] Não copiei conteúdo de curso, livro ou blog sem permissão (fontes citadas no fim da página)
-- [ ] `pnpm build` passa
+- [ ] `pnpm validar` e `pnpm build` passam

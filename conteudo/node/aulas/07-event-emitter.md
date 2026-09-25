@@ -133,7 +133,14 @@ Como falar:
 
 ---
 
-## 8. Resumo
+## 8. Como falar na entrevista
+
+**"O que é o EventEmitter e quando você usaria?"**
+> "É a implementação do padrão observer, ou pub/sub, dentro do processo Node: um objeto emite eventos com emit e os ouvintes registrados com on reagem. Ele é a base de streams, do servidor HTTP e do próprio process. Um detalhe importante é que o emit é síncrono: os ouvintes rodam na hora, em ordem, na mesma call stack. Uso pra desacoplar módulos internamente, sempre tratando o evento 'error' e removendo ouvintes que não preciso mais, pra não vazar memória. Se o evento precisa sobreviver a uma queda ou chegar em outra instância, aí não é EventEmitter, é fila ou broker."
+
+---
+
+## 9. Resumo
 
 - `EventEmitter` implementa **Observer / pub-sub** no processo.
 - `on`, `once`, `emit`, `off`.

@@ -124,13 +124,21 @@ Threads leves do Java 21, gerenciadas pela JVM. Em I/O bloqueante, a JVM libera 
 
 </details>
 
+**15. Maven ou Gradle?**
+<sub>Aula [10 — Build, Testes e Design Patterns](aulas/10-build-testes-e-padroes.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Os dois gerenciam dependências, compilam, testam e empacotam. Maven usa `pom.xml` declarativo com ciclo de vida fixo: simples e previsível. Gradle usa um DSL em código (Groovy ou Kotlin), é mais flexível e costuma ser mais rápido (build incremental e cache). Em ambos, use o wrapper (`./mvnw`, `./gradlew`) pra fixar a versão.
+
+</details>
+
 ---
 
 ## Nível 2 — Por quê? Quando usar?
 
 _Comparações e motivos. É aqui que aparecem os *trade-offs*._
 
-**15. Java é passagem por valor ou por referência?**
+**16. Java é passagem por valor ou por referência?**
 <sub>Aula [02 — Memória: Stack, Heap, tipos e Garbage Collector](aulas/02-memoria-e-garbage-collector.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -138,7 +146,7 @@ Sempre por valor. Para objetos, o valor copiado é a referência: dá pra altera
 
 </details>
 
-**16. Como funciona o Garbage Collector?**
+**17. Como funciona o Garbage Collector?**
 <sub>Aula [02 — Memória: Stack, Heap, tipos e Garbage Collector](aulas/02-memoria-e-garbage-collector.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -146,7 +154,15 @@ Libera objetos inalcançáveis a partir das GC roots. Heap geracional (a maioria
 
 </details>
 
-**17. Quais as vantagens de objetos imutáveis?**
+**18. Qual a diferença entre `OutOfMemoryError` e `StackOverflowError`?**
+<sub>Aula [02 — Memória: Stack, Heap, tipos e Garbage Collector](aulas/02-memoria-e-garbage-collector.md)</sub>
+<details><summary>Ver resposta</summary>
+
+`StackOverflowError` estoura a stack de uma thread, quase sempre por recursão sem fim. `OutOfMemoryError: Java heap space` é o heap sem espaço: objetos demais vivos, por volume real ou memory leak. O primeiro se resolve corrigindo a recursão; o segundo investigando com heap dump ou ajustando o heap.
+
+</details>
+
+**19. Quais as vantagens de objetos imutáveis?**
 <sub>Aula [03 — Orientação a Objetos (parte 1): classes, objetos, encapsulamento, static e final](aulas/03-orientacao-a-objetos-parte-1.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -154,7 +170,15 @@ Thread-safe por natureza, previsíveis, seguros como chave de HashMap e sem efei
 
 </details>
 
-**18. O que é polimorfismo e qual o ganho prático?**
+**20. Por que getters e setters pra tudo não é encapsulamento?**
+<sub>Aula [03 — Orientação a Objetos (parte 1): classes, objetos, encapsulamento, static e final](aulas/03-orientacao-a-objetos-parte-1.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Porque um setter genérico deixa qualquer um colocar o objeto em estado inválido: é um atributo público com mais passos. Encapsulamento é expor comportamento com significado (`depositar`, `sacar`) que protege as invariantes. Classes só com getters e setters e regra espalhada em services formam o chamado modelo anêmico.
+
+</details>
+
+**21. O que é polimorfismo e qual o ganho prático?**
 <sub>Aula [04 — Orientação a Objetos (parte 2): herança, polimorfismo, abstração e interfaces](aulas/04-orientacao-a-objetos-parte-2.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -162,7 +186,7 @@ Uma referência do tipo pai/interface executa o método do objeto real (dynamic 
 
 </details>
 
-**19. Overload vs override?**
+**22. Overload vs override?**
 <sub>Aula [04 — Orientação a Objetos (parte 2): herança, polimorfismo, abstração e interfaces](aulas/04-orientacao-a-objetos-parte-2.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -170,7 +194,7 @@ Overload: mesmo nome com parâmetros diferentes, resolvido em compilação. Over
 
 </details>
 
-**20. Interface ou classe abstrata?**
+**23. Interface ou classe abstrata?**
 <sub>Aula [04 — Orientação a Objetos (parte 2): herança, polimorfismo, abstração e interfaces](aulas/04-orientacao-a-objetos-parte-2.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -178,7 +202,7 @@ Interface: contrato/capacidade, várias por classe, sem estado. Classe abstrata:
 
 </details>
 
-**21. Por que "composição em vez de herança"?**
+**24. Por que "composição em vez de herança"?**
 <sub>Aula [04 — Orientação a Objetos (parte 2): herança, polimorfismo, abstração e interfaces](aulas/04-orientacao-a-objetos-parte-2.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -186,7 +210,15 @@ Herança acopla a subclasse aos detalhes da pai (fragile base class) e é fixa e
 
 </details>
 
-**22. Por que sobrescrever equals e hashCode juntos?**
+**25. O que é o Princípio de Substituição de Liskov? Dê um exemplo de violação.**
+<sub>Aula [04 — Orientação a Objetos (parte 2): herança, polimorfismo, abstração e interfaces](aulas/04-orientacao-a-objetos-parte-2.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Onde se espera a classe pai, qualquer subclasse deve funcionar sem surpresas. Violação clássica: `Quadrado extends Retangulo`, em que mudar a largura muda a altura e quebra quem espera um retângulo. Outro sinal: subclasse que lança "operação não suportada" num método herdado. Indica que a herança está errada e composição seria melhor.
+
+</details>
+
+**26. Por que sobrescrever equals e hashCode juntos?**
 <sub>Aula [05 — Object, equals/hashCode, String e Records](aulas/05-object-string-equals-records.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -194,7 +226,7 @@ Contrato: iguais no equals ⇒ mesmo hashCode. HashMap/HashSet usam hashCode par
 
 </details>
 
-**23. Por que String é imutável?**
+**27. Por que String é imutável?**
 <sub>Aula [05 — Object, equals/hashCode, String e Records](aulas/05-object-string-equals-records.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -202,7 +234,7 @@ Segurança (valores validados não mudam), thread-safety, cache do hashCode (boa
 
 </details>
 
-**24. StringBuilder vs StringBuffer vs concatenação?**
+**28. StringBuilder vs StringBuffer vs concatenação?**
 <sub>Aula [05 — Object, equals/hashCode, String e Records](aulas/05-object-string-equals-records.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -210,7 +242,7 @@ Concatenar em loop cria uma String nova a cada iteração (lento). StringBuilder
 
 </details>
 
-**25. O que é um record e quando não usar?**
+**29. O que é um record e quando não usar?**
 <sub>Aula [05 — Object, equals/hashCode, String e Records](aulas/05-object-string-equals-records.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -218,7 +250,7 @@ Classe de dados imutável que gera construtor, acessores, equals, hashCode e toS
 
 </details>
 
-**26. ArrayList vs LinkedList?**
+**30. ArrayList vs LinkedList?**
 <sub>Aula [06 — Collections e Generics](aulas/06-collections-e-generics.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -226,7 +258,7 @@ ArrayList: array dinâmico, get O(1), inserção no meio O(n), compacto em memó
 
 </details>
 
-**27. HashMap vs LinkedHashMap vs TreeMap?**
+**31. HashMap vs LinkedHashMap vs TreeMap?**
 <sub>Aula [06 — Collections e Generics](aulas/06-collections-e-generics.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -234,7 +266,7 @@ HashMap: O(1) médio, sem ordem. LinkedHashMap: mantém ordem de inserção (ou 
 
 </details>
 
-**28. Como funciona o HashMap por dentro?**
+**32. Como funciona o HashMap por dentro?**
 <sub>Aula [06 — Collections e Generics](aulas/06-collections-e-generics.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -242,7 +274,7 @@ Array de buckets; hashCode define o bucket e equals acha a chave. Colisões vira
 
 </details>
 
-**29. O que é type erasure?**
+**33. O que é type erasure?**
 <sub>Aula [06 — Collections e Generics](aulas/06-collections-e-generics.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -250,7 +282,15 @@ Generics só existem em compilação; no bytecode os tipos parametrizados são a
 
 </details>
 
-**30. Quais são as más práticas no tratamento de exceções?**
+**34. Por que `List<Integer>` não é subtipo de `List<Number>`?**
+<sub>Aula [06 — Collections e Generics](aulas/06-collections-e-generics.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Generics são invariantes: se fosse permitido, dava pra adicionar um `Double` numa lista que só aceita `Integer`. Pra aceitar listas de subtipos usa-se wildcard: `List<? extends Number>` pra ler (produtor) e `List<? super Integer>` pra escrever (consumidor), a regra PECS.
+
+</details>
+
+**35. Quais são as más práticas no tratamento de exceções?**
 <sub>Aula [07 — Exceções](aulas/07-excecoes.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -258,7 +298,15 @@ Engolir exceção (catch vazio), catch genérico de Exception/Throwable no meio 
 
 </details>
 
-**31. Explique a Streams API e o que significa ser lazy.**
+**36. Por que frameworks como Spring preferem exceções unchecked?**
+<sub>Aula [07 — Exceções](aulas/07-excecoes.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Checked exceptions obrigam `throws` em cascata por todas as camadas ou `catch` vazio só pra calar o compilador, poluindo assinaturas que não conseguem tratar o erro. Com unchecked, a exceção sobe até quem sabe lidar, normalmente um tratamento centralizado como o `@ControllerAdvice`.
+
+</details>
+
+**37. Explique a Streams API e o que significa ser lazy.**
 <sub>Aula [08 — Programação funcional em Java: Lambdas, Streams e Optional](aulas/08-lambdas-streams-optional.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -266,7 +314,7 @@ Pipeline declarativo: fonte → operações intermediárias (filter, map, flatMa
 
 </details>
 
-**32. Quando usar parallel stream?**
+**38. Quando usar parallel stream?**
 <sub>Aula [08 — Programação funcional em Java: Lambdas, Streams e Optional](aulas/08-lambdas-streams-optional.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -274,7 +322,7 @@ Raramente: só com muitos dados e operações CPU-bound sem estado compartilhado
 
 </details>
 
-**33. Como usar Optional corretamente?**
+**39. Como usar Optional corretamente?**
 <sub>Aula [08 — Programação funcional em Java: Lambdas, Streams e Optional](aulas/08-lambdas-streams-optional.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -282,7 +330,15 @@ Como tipo de retorno de métodos que podem não ter resultado. Não em atributos
 
 </details>
 
-**34. synchronized vs volatile?**
+**40. Qual a diferença entre `map` e `flatMap` em Streams?**
+<sub>Aula [08 — Programação funcional em Java: Lambdas, Streams e Optional](aulas/08-lambdas-streams-optional.md)</sub>
+<details><summary>Ver resposta</summary>
+
+`map` transforma cada elemento em outro (1 pra 1). `flatMap` transforma cada elemento num stream e "achata" tudo num stream só (1 pra N), por exemplo de uma lista de pedidos pra todos os itens de todos os pedidos. No `Optional` é parecido: `flatMap` evita `Optional<Optional<T>>`.
+
+</details>
+
+**41. synchronized vs volatile?**
 <sub>Aula [09 — Concorrência: Threads, sincronização, Executors, CompletableFuture e Virtual Threads](aulas/09-concorrencia.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -290,7 +346,7 @@ synchronized garante exclusão mútua e visibilidade. volatile só garante visib
 
 </details>
 
-**35. Por que usar ExecutorService em vez de criar threads?**
+**42. Por que usar ExecutorService em vez de criar threads?**
 <sub>Aula [09 — Concorrência: Threads, sincronização, Executors, CompletableFuture e Virtual Threads](aulas/09-concorrencia.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -304,7 +360,7 @@ Threads de sistema são caras; o pool reaproveita threads, limita quantas rodam 
 
 _Cenários reais: juntar vários conceitos e contar como resolveria._
 
-**36. Existe memory leak em Java? Como investigar?**
+**43. Existe memory leak em Java? Como investigar?**
 <sub>Aula [02 — Memória: Stack, Heap, tipos e Garbage Collector](aulas/02-memoria-e-garbage-collector.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -312,7 +368,15 @@ Sim: objetos que não são mais usados mas continuam referenciados (coleção es
 
 </details>
 
-**37. Como lidar com coleções acessadas por várias threads?**
+**44. Um `HashSet` está aceitando objetos "duplicados". O que você investigaria?**
+<sub>Aula [05 — Object, equals/hashCode, String e Records](aulas/05-object-string-equals-records.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Se a classe sobrescreve `equals` e `hashCode` juntos e de forma consistente (iguais no equals precisam ter o mesmo hashCode). Se o hashCode usa campos mutáveis que foram alterados depois da inserção. E se o `equals` recebe `Object` (e não sobrecarga com o tipo da classe). Usar record resolve boa parte disso.
+
+</details>
+
+**45. Como lidar com coleções acessadas por várias threads?**
 <sub>Aula [06 — Collections e Generics](aulas/06-collections-e-generics.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -320,7 +384,7 @@ ConcurrentHashMap (alta concorrência, operações atômicas como computeIfAbsen
 
 </details>
 
-**38. O que é race condition e como evitar?**
+**46. O que é race condition e como evitar?**
 <sub>Aula [09 — Concorrência: Threads, sincronização, Executors, CompletableFuture e Virtual Threads](aulas/09-concorrencia.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -328,7 +392,7 @@ Resultado dependente da ordem de execução de threads em estado compartilhado (
 
 </details>
 
-**39. O que é deadlock e como prevenir?**
+**47. O que é deadlock e como prevenir?**
 <sub>Aula [09 — Concorrência: Threads, sincronização, Executors, CompletableFuture e Virtual Threads](aulas/09-concorrencia.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -336,7 +400,15 @@ Threads esperando umas pelas outras para sempre (T1 tem A e quer B; T2 tem B e q
 
 </details>
 
-**40. Como você testa uma aplicação Spring Boot?**
+**48. Como você dimensionaria um thread pool?**
+<sub>Aula [09 — Concorrência: Threads, sincronização, Executors, CompletableFuture e Virtual Threads](aulas/09-concorrencia.md)</sub>
+<details><summary>Ver resposta</summary>
+
+Depende do tipo de trabalho. CPU-bound: perto do número de núcleos, porque mais threads só geram troca de contexto. I/O-bound: bem mais threads, já que passam a maior parte do tempo esperando (ou virtual threads). Sempre com fila limitada e política de rejeição, e medindo: latência, tamanho da fila e uso de CPU. E lembrando do limite das dependências, como o pool de conexões do banco.
+
+</details>
+
+**49. Como você testa uma aplicação Spring Boot?**
 <sub>Aula [10 — Build, Testes e Design Patterns](aulas/10-build-testes-e-padroes.md)</sub>
 <details><summary>Ver resposta</summary>
 
@@ -344,7 +416,7 @@ Unitários com JUnit, Mockito e AssertJ sem subir o Spring; @WebMvcTest pra cama
 
 </details>
 
-**41. Cite design patterns que você usa e onde o Spring os usa.**
+**50. Cite design patterns que você usa e onde o Spring os usa.**
 <sub>Aula [10 — Build, Testes e Design Patterns](aulas/10-build-testes-e-padroes.md)</sub>
 <details><summary>Ver resposta</summary>
 

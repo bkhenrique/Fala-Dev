@@ -14,6 +14,9 @@ export function Cabecalho() {
           <Link href="/#trilhas" className="rounded-md px-3 py-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
             Trilhas
           </Link>
+          <Link href="/dicionario-do-dia-a-dia" className="rounded-md px-3 py-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
+            Dicionário
+          </Link>
           {URL_REPOSITORIO && (
             <a
               href={URL_REPOSITORIO}

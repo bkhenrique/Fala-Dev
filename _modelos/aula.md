@@ -6,7 +6,9 @@ Regras:
 - É **teoria**: o que é, por que existe, como funciona por dentro e como falar sobre. Tutorial passo a passo não entra.
 - Explique como se fosse pra um amigo, mas sem fugir do termo técnico: apresente o termo e explique.
 - Se o conceito é geral (vale pra qualquer linguagem), ele mora em `fundamentos/`. Aqui entra a parte da stack, e dá pra linkar o conceito.
-- Nenhum arquivo passa de 500 linhas. Se passar, divida em duas aulas.
+- Entre 100 e 250 linhas costuma ser o ideal; o máximo é 500. Se passar, divida em duas aulas.
+- Guia de estilo completo e aulas de referência: [`CONTRIBUTING.md`](../CONTRIBUTING.md#4-guia-de-estilo).
+- Antes do PR, rode `pnpm validar`.
 
 ```markdown
 # Aula NN — Título da aula
