@@ -1,0 +1,22 @@
+# Glossário — Kotlin
+
+- **Kotlin:** Linguagem que pode compilar para múltiplos alvos.
+- **Kotlin/JVM:** Alvo Kotlin que produz código para a Java Virtual Machine.
+- **Kotlin/JS:** Alvo que compila Kotlin para ecossistema JavaScript.
+- **Kotlin/Native:** Toolchain Kotlin para alvos nativos suportados.
+- **Kotlin Multiplatform:** Tecnologia para compartilhar código entre alvos.
+- **val:** Vínculo local somente leitura após inicialização.
+- **var:** Vínculo reatribuível.
+- **Null safety:** Sistema de tipos que distingue referências anuláveis e não anuláveis.
+- **Platform type:** Tipo de interop cuja nullability não é conhecida completamente.
+- **Unit:** Tipo de um único valor usado em funções sem resultado significativo.
+- **Nothing:** Tipo sem valores, usado para expressões que não retornam normalmente.
+- **Data class:** Classe de dados com operações sintetizadas pelo compilador.
+- **Sealed class:** Hierarquia restringida, útil para representar alternativas finitas.
+- **Variância:** Regras de substituição de parâmetros de tipo, como out e in.
+- **Sequence:** Abstração de processamento lazy de elementos.
+- **Extension function:** Função com sintaxe de receptor que não modifica a classe.
+- **suspend:** Modificador de função que permite suspensão em contexto compatível.
+- **Coroutine:** Computação suspensível, suportada por infraestrutura da linguagem e bibliotecas.
+- **kotlinx.coroutines:** Biblioteca com APIs comuns de coroutines Kotlin.
+- **Gradle:** Ferramenta de build comumente usada em projetos Kotlin.

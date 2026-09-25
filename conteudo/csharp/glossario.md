@@ -1,0 +1,22 @@
+# Glossário — C#
+
+- **C#:** Linguagem de programação multiparadigma.
+- **.NET:** Plataforma com runtime, bibliotecas, compiladores e ferramentas.
+- **CIL:** Representação intermediária usada em assemblies .NET.
+- **JIT:** Compilação de código intermediário durante a execução.
+- **AOT:** Compilação antecipada, quando suportada pelo alvo.
+- **Assembly:** Unidade .NET que inclui código e metadados.
+- **Tipo de valor:** Tipo com semântica de valor, como struct e int.
+- **Tipo de referência:** Tipo cujo valor referencia um objeto, como class e string.
+- **Boxing:** Conversão de valor para object ou interface compatível.
+- **Record:** Classe ou struct com igualdade sintetizada baseada em valores.
+- **Interface:** Contrato que tipos podem implementar.
+- **Generic:** Tipo ou método parametrizado por outros tipos.
+- **LINQ:** Operadores de consulta sobre sequências ou provedores.
+- **Execução adiada:** Execução que começa quando uma sequência é enumerada.
+- **Nullable reference type:** Anotação que orienta análise estática de nullabilidade.
+- **Nullable<T>:** Tipo de valor que representa valor ou ausência.
+- **IDisposable:** Contrato de liberação determinística por Dispose.
+- **Garbage collector:** Gerencia memória de objetos gerenciados inacessíveis.
+- **Task:** Representação de operação ou resultado assíncrono.
+- **CancellationToken:** Sinal cooperativo de solicitação de cancelamento.
