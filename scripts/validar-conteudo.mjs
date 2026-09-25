@@ -7,7 +7,7 @@ import matter from "gray-matter";
 const RAIZ = process.cwd();
 const CONTEUDO = path.join(RAIZ, "conteudo");
 const LIMITE_LINHAS = 500;
-const TIPOS = ["fundamentos", "linguagem", "framework"];
+const TIPOS = ["fundamentos", "linguagem", "runtime", "biblioteca", "framework"];
 const NOME_ARQUIVO = /^[a-z0-9]+(-[a-z0-9]+)*\.md$/;
 const NOME_AULA = /^(\d{2})-[a-z0-9]+(-[a-z0-9]+)*\.md$/;
 const NIVEIS = [1, 2, 3];

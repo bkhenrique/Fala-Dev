@@ -1,12 +1,12 @@
 ---
 titulo: React
-tipo: framework
+tipo: biblioteca
 ordem: 3
-descricao: Modelo mental, estado e re-render, useEffect, hooks, performance, dados e estado global, React 19, testes e arquitetura.
+descricao: "Biblioteca de interface: modelo mental, estado, hooks, performance, dados, React 19, testes e arquitetura."
 ---
 # React
 
-Curso teórico em 10 aulas, na ordem. React é tecnicamente uma **biblioteca** de UI, mas fica no grupo de frameworks por ser a base de front de quase tudo, inclusive da trilha de [Next.js](../nextjs/).
+Curso teórico em 10 aulas sobre React, uma biblioteca para construir interfaces com componentes. React não prescreve sozinho roteamento ou busca de dados; frameworks como [Next.js](../nextjs/) acrescentam essa estrutura.
 
 ## Como estudar
 

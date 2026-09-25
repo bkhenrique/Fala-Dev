@@ -1,6 +1,6 @@
 ---
 titulo: Nome da Trilha
-tipo: framework        # linguagem | framework | fundamentos
+tipo: framework        # fundamentos | linguagem | runtime | biblioteca | framework
 base: php              # opcional: trilha que é pré-requisito (nome da pasta)
 ordem: 10              # posição no menu
 descricao: Uma frase dizendo o que a trilha cobre.

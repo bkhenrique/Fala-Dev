@@ -13,14 +13,16 @@ Sem cadastro, sem login, sem banco. Você abre, escolhe a trilha e estuda.
 | Trilha | Tipo | Aulas | Perguntas |
 |---|---|---|---|
 | [Fundamentos](conteudo/fundamentos/) | Fundamentos | 17 | 75 |
-| [Node.js](conteudo/node/) | Linguagem | 14 | 60 |
-| [React](conteudo/react/) | Framework | 10 | 51 |
+| [Node.js](conteudo/node/) | Runtime | 14 | 60 |
+| [React](conteudo/react/) | Biblioteca | 10 | 51 |
 | [NestJS](conteudo/nestjs/) | Framework | 11 | 55 |
 | [Next.js](conteudo/nextjs/) | Framework | 10 | 50 |
 | [Java](conteudo/java/) | Linguagem | 10 | 50 |
 | [Spring](conteudo/spring/) | Framework | 7 | 47 |
 | [PHP](conteudo/php/) | Linguagem | 10 | 50 |
 | [Laravel](conteudo/laravel/) | Framework | 10 | 50 |
+
+Os tipos classificam a tecnologia: **linguagem** define sintaxe e semântica; **runtime** a executa e fornece APIs; **biblioteca** oferece funcionalidades reutilizáveis; **framework** organiza a aplicação e seu fluxo. **Fundamentos** reúne conceitos que atravessam stacks.
 
 Além disso, o [dicionário do dia a dia](conteudo/dicionario-do-dia-a-dia.md) traduz o jeito que a gente fala ("joguei pra rodar em segundo plano") pro termo técnico ("processamento assíncrono com fila").
 

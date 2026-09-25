@@ -1,7 +1,7 @@
 import { existeArquivo, lerArquivo, listarPaginas, rotaDoArquivo } from "./arquivos";
 import { semPrefixoDeAula, tituloDoMarkdown } from "./titulo";
 
-export type TipoTrilha = "fundamentos" | "linguagem" | "framework";
+export type TipoTrilha = "fundamentos" | "linguagem" | "runtime" | "biblioteca" | "framework";
 
 export type Aula = { rota: string; numero: string; titulo: string };
 
@@ -24,6 +24,8 @@ export type PaginaAvulsa = { rota: string; titulo: string };
 export const GRUPOS: { tipo: TipoTrilha; rotulo: string }[] = [
   { tipo: "fundamentos", rotulo: "Fundamentos" },
   { tipo: "linguagem", rotulo: "Linguagens" },
+  { tipo: "runtime", rotulo: "Runtimes" },
+  { tipo: "biblioteca", rotulo: "Bibliotecas" },
   { tipo: "framework", rotulo: "Frameworks" },
 ];
 

@@ -1,12 +1,12 @@
 ---
 titulo: Node.js
-tipo: linguagem
+tipo: runtime
 ordem: 2
-descricao: Event Loop, libuv, Promises, streams, escala, filas, testes e tempo real.
+descricao: "Runtime JavaScript: Event Loop, libuv, Promises, streams, filas, testes e tempo real."
 ---
 # Node.js
 
-Curso teórico em 14 aulas, na ordem. Cada aula explica o assunto do zero, com analogias, exemplos de código, **como falar na entrevista**, resumo e os termos que você precisa dominar.
+Trilha teórica em 14 aulas sobre o runtime Node.js e suas APIs. JavaScript é a linguagem; Node.js fornece o runtime e APIs de sistema para executá-la fora do navegador. As aulas explicam o modelo de execução, exemplos e vocabulário para entrevistas.
 
 ## Como estudar
 

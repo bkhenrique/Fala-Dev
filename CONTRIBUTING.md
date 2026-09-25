@@ -133,9 +133,11 @@ Copie [`_modelos/termo.md`](_modelos/termo.md). Todo termo tem `- **Em uma frase
 
 | O assunto… | Vai em | Exemplo |
 |---|---|---|
-| serve pra qualquer linguagem | `fundamentos/` | Idempotência, CAP, cache-aside |
-| é da linguagem | `php/`, `java/`, `node/`… | Event loop no Node, garbage collector no Java |
-| só faz sentido citando o framework | `laravel/`, `nestjs/`, `spring/`… | Como o container do Nest resolve dependências |
+| serve pra qualquer stack | `fundamentos/` | Idempotência, CAP, cache-aside |
+| pertence à linguagem | trilha de linguagem, como `php/` ou `java/` | Tipos, sintaxe e semântica da linguagem |
+| pertence ao ambiente que executa a linguagem | trilha de runtime, como `node/` | Event Loop, libuv e APIs do runtime Node.js |
+| é uma biblioteca reutilizável | trilha de biblioteca, como `react/` | Componentes e estado de UI do React |
+| estrutura uma aplicação e controla seu fluxo | trilha de framework, como `laravel/`, `nestjs/` ou `spring/` | Container e ciclo de requisição do framework |
 
 Um conceito geral pode aparecer de novo na trilha de uma stack, mostrando **como aquela stack faz**. Nesse caso, seja breve na parte conceitual e foque no específico.
 
@@ -147,7 +149,7 @@ Um conceito geral pode aparecer de novo na trilha de uma stack, mostrando **como
 ```md
 ---
 titulo: Laravel
-tipo: framework        # linguagem | framework | fundamentos
+tipo: framework        # fundamentos | linguagem | runtime | biblioteca | framework
 base: php              # opcional: trilha que é pré-requisito (nome da pasta)
 ordem: 10              # posição no menu
 descricao: Service container, Eloquent, filas e testes no Laravel.
