@@ -5,16 +5,17 @@ import { IconeGithub } from "./IconeGithub";
 
 export function Cabecalho() {
   return (
-    <header className="sticky top-0 z-20 border-b border-zinc-200 bg-[var(--background)]/85 backdrop-blur dark:border-zinc-800">
-      <div className="mx-auto flex h-14 max-w-7xl items-center gap-4 px-4">
-        <Link href="/" className="text-lg font-bold tracking-tight">
-          Fala<span className="text-emerald-600 dark:text-emerald-400">Dev</span>
+    <header className="sticky top-0 z-20 border-b border-[#e8e4db] bg-[var(--background)]/90 backdrop-blur-xl dark:border-zinc-800">
+      <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6">
+        <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
+          <span className="flex size-8 items-center justify-center rounded-lg bg-emerald-900 text-sm text-white dark:bg-emerald-600">F</span>
+          <span>Fala<span className="text-emerald-700 dark:text-emerald-400">Dev</span></span>
         </Link>
         <nav className="ml-auto flex items-center gap-1 text-sm">
-          <Link href="/#trilhas" className="rounded-md px-3 py-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
+          <Link href="/#trilhas" className="rounded-lg px-3 py-2 font-medium text-zinc-600 transition hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
             Trilhas
           </Link>
-          <Link href="/dicionario-do-dia-a-dia" className="rounded-md px-3 py-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
+          <Link href="/dicionario-do-dia-a-dia" className="rounded-lg px-3 py-2 font-medium text-zinc-600 transition hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
             Dicionário
           </Link>
           {URL_REPOSITORIO && (

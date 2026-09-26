@@ -12,7 +12,7 @@ export default function Home() {
   const totalPerguntas = trilhas.reduce((soma, t) => soma + t.totalPerguntas, 0);
 
   return (
-    <main className="mx-auto w-full max-w-6xl flex-1 px-4">
+    <main className="landing-shell mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6">
       <Hero rotaInicial={trilhas[0]?.rota ?? "/"} totalAulas={totalAulas} totalPerguntas={totalPerguntas} />
       <ParaQueServe />
       <Dicionario />
